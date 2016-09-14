@@ -72,7 +72,7 @@ alias f="open -a Finder"
 alias safari="open -a safari"
 alias chrome="open -a google\ chrome"
 alias gh="open -a google\ chrome 'http://github.com/amandeepmittal'"
-
+alias o="cd ~/old_code"
 
 
 # Show/Hide hidden files in Finder
@@ -81,7 +81,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 
 # Empty Trash on main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias empty="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Get my IP
 alias ip="curl icanhazip.com"
