@@ -64,9 +64,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~"
 
 # Navigation Shortcuts
-alias p="cd ~/Projects"
-alias n="cd /usr/local/lib/node_modules/"
-alias pg="cd ~/Projects/github_clones"
+alias p="cd ~/projects"
+alias nodemodules="cd /usr/local/lib/node_modules/"
+alias g="cd ~/github_clones"
 alias h="history"
 alias f="open -a Finder"
 alias safari="open -a safari"
