@@ -108,5 +108,7 @@ alias npmconfig="npm config list"
 #git commands
 alias gts="git status"
 alias gta="git add ."
+alias gtaa="git add"
 alias gtc="git commit -m"
 alias gtpom="git push origin master"
+
