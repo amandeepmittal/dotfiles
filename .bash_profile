@@ -103,3 +103,10 @@ alias npml="npm list"
 alias npmlg="npm list -g --depth=0"
 alias npmout="npm outdated -g --depth=0"
 alias npmconfig="npm config list"
+
+
+#git commands
+alias gts="git status"
+alias gta="git add ."
+alias gtc="git commit -m"
+alias gtpom="git push origin master"
