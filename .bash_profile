@@ -103,7 +103,7 @@ alias npml="npm list"
 alias npmlg="npm list -g --depth=0"
 alias npmout="npm outdated -g --depth=0"
 alias npmconfig="npm config list"
-alias npmy = npm init --yes
+alias npmy="npm init --yes"
 
 #git commands
 alias gts="git status"
