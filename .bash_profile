@@ -90,7 +90,7 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # Recursively delete `.DS_Store` files
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 
-# npm commands
+# npm commands ##############################
 # visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission 
 alias npmg="npm install -g"
 alias npmi="npm install"
@@ -105,8 +105,27 @@ alias npmout="npm outdated -g --depth=0"
 alias npmconfig="npm config list"
 alias npmy="npm init --yes"
 
+# ##################################
 
+# extra handy npm commands
 
+# install dependencies
+alias ns="time npm install -S"
+alias nd="time npm install -D"
+
+# uninstall dependencies
+alias nsr="time npm uninstall -S"
+alias ndr="time npm uninstall -D"
+
+# install & uninstall global dependencies
+alias ng="time npm install -g"
+alias ngr="time npm uninstall -g"
+
+# install dependencies from cache
+alias nsc="time npm --cache-min 9999999 install -S"
+alias ndc="time npm --cache-min 9999999 install -D"
+
+# ###################################
 #git commands
 alias gs="git status"
 alias ga="git add ."
