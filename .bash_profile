@@ -105,10 +105,12 @@ alias npmout="npm outdated -g --depth=0"
 alias npmconfig="npm config list"
 alias npmy="npm init --yes"
 
+
+
 #git commands
-alias gts="git status"
-alias gta="git add ."
-alias gtaa="git add"
-alias gtc="git commit -m"
-alias gtpom="git push origin master"
+alias gs="git status"
+alias ga="git add ."
+alias gaa="git add"
+alias gc="git commit -m"
+alias gm="git push origin master"
 
