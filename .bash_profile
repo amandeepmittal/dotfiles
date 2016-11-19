@@ -132,4 +132,9 @@ alias ga="git add ."
 alias gaa="git add"
 alias gc="git commit -m"
 alias gm="git push origin master"
+alias gd="git diff"
 
+# #################################
+# handy bash_profile
+alias nbp="nano ~/.bash_profile"
+alias sbp="source ~/.bash_profile"
