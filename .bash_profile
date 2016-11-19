@@ -104,6 +104,7 @@ alias npmlg="npm list -g --depth=0"
 alias npmout="npm outdated -g --depth=0"
 alias npmconfig="npm config list"
 alias npmy="npm init --yes"
+alias ninfo="npm info"
 
 # ##################################
 
