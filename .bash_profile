@@ -1,5 +1,5 @@
 export PATH=~/bin:$PATH
- 
+
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
 txtgrn='\e[0;32m' # Green
@@ -33,11 +33,11 @@ bakpur='\e[45m'   # Purple
 bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
- 
+
 #print_before_the_prompt () {
 #    printf "\n$txtred%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$PWD" "$(vcprompt)"
 #}
- 
+
 #PROMPT_COMMAND=print_before_the_prompt
 
 # Git branch in prompt.
@@ -64,7 +64,7 @@ alias .....="cd ../../../.."
 alias ~="cd ~"
 
 # Navigation Shortcuts
-alias p="cd ~/projects"
+alias p="cd ~/_projects"
 alias n="cd /usr/local/lib/node_modules/ && ls"
 alias g="cd ~/github_clones"
 alias h="history"
@@ -91,7 +91,7 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # npm commands ##############################
-# visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission 
+# visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission
 alias npmg="npm install -g"
 alias npmi="npm install"
 alias npmu="npm update"
@@ -134,8 +134,15 @@ alias gaa="git add"
 alias gc="git commit -m"
 alias gm="git push origin master"
 alias gd="git diff"
+alias gp="git push"
 
 # #################################
 # handy bash_profile
 alias nbp="nano ~/.bash_profile"
 alias sbp="source ~/.bash_profile"
+
+
+# npm scripts if available ########
+alias nst="npm run start"
+alias ntest="npm run test"
+alias ncm="npm run commit"
