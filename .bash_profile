@@ -1,4 +1,8 @@
 export PATH=~/bin:$PATH
+export ANDROID_HOME=/Users/amandeepmittal/
+export PATH=$PATH:/$ANDROID_HOME/platform-tools/
+export PATH=$PATH:/$ANDROID_HOME/tools/
+export PATH=$PATH:/$ANDROID_HOME/build-tools/
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
@@ -135,6 +139,7 @@ alias gc="git commit -m"
 alias gm="git push origin master"
 alias gd="git diff"
 alias gp="git push"
+alias glog="git log --oneline --graph --decorate --color"
 
 # #################################
 # handy bash_profile
