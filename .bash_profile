@@ -130,16 +130,6 @@ alias ngr="time npm uninstall -g"
 alias nsc="time npm --cache-min 9999999 install -S"
 alias ndc="time npm --cache-min 9999999 install -D"
 
-# ###################################
-#git commands
-alias gs="git status"
-alias ga="git add ."
-alias gaa="git add"
-alias gc="git commit -m"
-alias gm="git push origin master"
-alias gd="git diff"
-alias gp="git push"
-alias glog="git log --oneline --graph --decorate --color"
 
 # #################################
 # handy bash_profile
@@ -151,3 +141,23 @@ alias sbp="source ~/.bash_profile"
 alias nst="npm run start"
 alias ntest="npm run test"
 alias ncm="npm run commit"
+
+# ###################################
+#git commands
+alias gs="git status"
+alias gall="git add ."
+alias gsingle="git add"
+alias gcommit="git commit -m"
+alias gpush="git push origin master"
+alias gdiff="git diff"
+alias glog="git log --oneline --graph --decorate --color"
+alias glogpretty="git log --pretty=oneline -graph"
+alias ginteractive="git add -i"
+alias gss="git status -s" # short status
+alias gstageskip="git commit -a -m" #shorthand to commit, skip staging area
+alias grm="git rm" #remove file
+alias gunstage="git reset HEAD" #[filename]
+alias gbranchlist="git branch" #branch management
+alias gnewbranch="git branch" #[branchname]
+alias gswitch="git checkout" #[branchname]
+alias gmerge="git merge" #[branchname]
