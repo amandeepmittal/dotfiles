@@ -144,11 +144,13 @@ alias ncm="npm run commit"
 
 # ###################################
 #git commands
-alias gs="git status"
-alias gall="git add ."
-alias gsingle="git add"
-alias gcommit="git commit -m"
-alias gpush="git push origin master"
+alias status="git status"
+alias all="git add ."
+alias single="git add"
+alias commit="git commit -m"
+alias commitsuper="git commit -am"
+alias push="git push origin master"
+alias pushheroku="git push heroku master"
 alias gdiff="git diff"
 alias glog="git log --oneline --graph --decorate --color"
 alias glogpretty="git log --pretty=oneline -graph"
@@ -156,8 +158,8 @@ alias ginteractive="git add -i"
 alias gss="git status -s" # short status
 alias gstageskip="git commit -a -m" #shorthand to commit, skip staging area
 alias grm="git rm" #remove file
-alias gunstage="git reset HEAD" #[filename]
+alias unstage="git reset HEAD" #[filename]
 alias gbranchlist="git branch" #branch management
-alias gnewbranch="git branch" #[branchname]
-alias gswitch="git checkout" #[branchname]
-alias gmerge="git merge" #[branchname]
+alias branch="git branch" #[branchname]
+alias switch="git checkout" #[branchname]
+alias merge="git merge" #[branchname]
