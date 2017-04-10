@@ -42,6 +42,16 @@ txtrst='\e[0m'    # Text Reset
 #    printf "\n$txtred%s: $bldgrn%s $txtpur%s\n$txtrst" "$USER" "$PWD" "$(vcprompt)"
 #}
 
+# random element
+rand() {
+  printf $((  $1 *  RANDOM  / 32767   ))
+}
+rand_element () {
+  local -a th=("$@")
+  unset th[0]
+  printf $'%s\n' "${th[$(($(rand "${#th[*]}")+1))]}"
+}
+
 #PROMPT_COMMAND=print_before_the_prompt
 
 # Git branch in prompt.
@@ -49,9 +59,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-
-
-export PS1="\[\033[37m\]\A\[$(tput sgr0) \[\033[33;1m\]{\[\033[33;1m\]\w\[\033[m\]\[\033[33;1m\]} \[\033[35m\]\$(parse_git_branch)\[\033[00m\]\n\$ "
+export PS1="\[\033[37m\]\A\[$(tput sgr0) \[\033[33;1m\]{\[\033[33;1m\]\w\[\033[m\]\[\033[33;1m\]} \[\033[35m\]\$(parse_git_branch)\[\033[00m\]\n$(rand_element 😅 👽 🔥 🚀 👻 ⛄ 👾 🍔 😄 🍰 🐑 😎 🖖 👏 ⚡️ 🤖)  $ ";
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
@@ -60,24 +68,14 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Aliases Commands
 #----------------------------
 
-# Easier navigation
+# Navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias ~="cd ~"
 
 # Navigation Shortcuts
-alias p="cd ~/_projects"
 alias n="cd /usr/local/lib/node_modules/ && ls"
 alias g="cd ~/github_clones"
-alias h="history"
-alias f="open -a Finder"
-alias safari="open -a safari"
-alias chrome="open -a google\ chrome"
-alias gh="open -a google\ chrome 'http://github.com/amandeepmittal'"
-alias o="cd ~/old_code"
-
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -87,79 +85,26 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias empty="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-# Get my IP
-alias ip="curl icanhazip.com"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
 # Recursively delete `.DS_Store` files
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 
-# npm commands ##############################
-# visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission
-alias npmg="npm install -g"
-alias npmi="npm install"
-alias npmu="npm update"
-alias npmug="sudo npm update -g"
-alias npmcache="npm --cache-min 9999999 install"
-alias npmr="npm uninstall"
-alias npmrg="npm uninstall -g"
-alias npml="npm list"
-alias npmlg="npm list -g --depth=0"
-alias npmout="npm outdated -g --depth=0"
-alias npmconfig="npm config list"
-alias npmy="npm init --yes"
-alias ninfo="npm info"
+# Reload Bash Profile
+alias reload="source ~/.bash_profile"
 
-# ##################################
-
-# extra handy npm commands
-
-# install dependencies
-alias ns="time npm install -S"
-alias nd="time npm install -D"
-
-# uninstall dependencies
-alias nsr="time npm uninstall -S"
-alias ndr="time npm uninstall -D"
-
-# install & uninstall global dependencies
-alias ng="time npm install -g"
-alias ngr="time npm uninstall -g"
-
-# install dependencies from cache
-alias nsc="time npm --cache-min 9999999 install -S"
-alias ndc="time npm --cache-min 9999999 install -D"
-
-
-# #################################
-# handy bash_profile
-alias nbp="nano ~/.bash_profile"
-alias sbp="source ~/.bash_profile"
-
-
-# npm scripts if available ########
-alias nst="npm run start"
-alias ntest="npm run test"
-alias ncm="npm run commit"
-
-# ###################################
-#git commands
-alias status="git status"
-alias all="git add ."
-alias single="git add"
-alias commit="git commit -m"
-alias commitsuper="git commit -am"
-alias push="git push origin master"
-alias pushheroku="git push heroku master"
-alias gdiff="git diff"
+########## GIT ALIASES ######################
+alias gc="git commit -m $1";
+alias gs="git status";
+alias gp="git pull";
+alias gf="git fetch";
+alias gpush="git push";
+alias gd="git diff";
+alias ga="git add .";
 alias glog="git log --oneline --graph --decorate --color"
-alias glogpretty="git log --pretty=oneline -graph"
-alias ginteractive="git add -i"
-alias gss="git status -s" # short status
-alias gstageskip="git commit -a -m" #shorthand to commit, skip staging area
-alias grm="git rm" #remove file
-alias unstage="git reset HEAD" #[filename]
-alias gbranchlist="git branch" #branch management
-alias branch="git branch" #[branchname]
-alias switch="git checkout" #[branchname]
-alias merge="git merge" #[branchname]
+
+########## npm commands #####################
+# visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission
+alias ni="time npm install"
+alias nout="npm outdated -g --depth=0"
+alias ninit="npm init --yes"
+alias nconfig="npm config list"
+alias ncache="time npm --cache-min 999999 install"
