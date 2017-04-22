@@ -59,7 +59,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\[\033[37m\]\A\[$(tput sgr0) \[\033[33;1m\]{\[\033[33;1m\]\w\[\033[m\]\[\033[33;1m\]} \[\033[35m\]\$(parse_git_branch)\[\033[00m\]\n$(rand_element 😅 👽 🔥 🚀 👻 ⛄ 👾 🍔 😄 🍰 🐑 😎 🖖 👏 ⚡️ 🤖)  $ ";
+export PS1="\[\033[37m\]\A\[$(tput sgr0) \[\033[33;1m\]{\[\033[33;1m\]\w\[\033[m\]\[\033[33;1m\]} \[\033[35m\]\$(parse_git_branch)\[\033[00m\]\n$(rand_element 😅 🚀 😄 🐑 😎 🖖 👏 ⚡️ 🤖)  $ ";
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
@@ -92,7 +92,7 @@ alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 alias reload="source ~/.bash_profile"
 
 ########## GIT ALIASES ######################
-alias gc="git commit -m $1";
+alias gc="git commit -m";
 alias gs="git status";
 alias gp="git pull";
 alias gf="git fetch";
