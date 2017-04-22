@@ -109,3 +109,5 @@ alias ninit="npm init --yes"
 alias nconfig="npm config list"
 alias ncache="time npm --cache-min 999999 install"
 alias nu="time npm uninstall"
+alias nr="npm run"
+
