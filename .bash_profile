@@ -59,7 +59,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\[\033[37m\]\A\[$(tput sgr0) \[\033[33;1m\]{\[\033[33;1m\]\w\[\033[m\]\[\033[33;1m\]} \[\033[35m\]\$(parse_git_branch)\[\033[00m\]\n$(rand_element 😅 🚀 😄 🐑 😎 🖖 👏 ⚡️ 🤖)  $ ";
+export PS1="\[\033[37m\]\A\[$(tput sgr0) \[\033[33;1m\]{\[\033[33;1m\]\w\[\033[m\]\[\033[33;1m\]} \[\033[35m\]\$(parse_git_branch)\[\033[00m\]\n$(rand_element 😅 🚀 😄 😎 🖖 👏 ⚡️ 🤖)  $ ";
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
