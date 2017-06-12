@@ -111,3 +111,6 @@ alias ncache="time npm --cache-min 999999 install"
 alias nu="time npm uninstall"
 alias nr="npm run"
 
+#### Hexo #####
+alias hexod="hexo deploy"
+alias hexog="hexo generate"
