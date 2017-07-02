@@ -70,12 +70,11 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Navigation
 alias ..="cd .."
-alias ...="cd ../.."
 alias ~="cd ~"
 
 # Navigation Shortcuts
 alias n="cd /usr/local/lib/node_modules/ && ls"
-alias g="cd ~/github_clones"
+alias g="cd ~/github"
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -92,13 +91,14 @@ alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 alias reload="source ~/.bash_profile"
 
 ########## GIT ALIASES ######################
-alias gc="git commit -m";
-alias gs="git status";
-alias gp="git pull";
-alias gf="git fetch";
-alias gpush="git push";
-alias gd="git diff";
-alias ga="git add .";
+alias gc="git commit -m"
+alias gs="git status"
+alias gp="git pull"
+alias gf="git fetch"
+alias gpush="git push"
+alias gd="git diff"
+alias gall="git add ."
+alias ga="git add"
 alias glog="git log --oneline --graph --decorate --color"
 
 ########## npm commands #####################
