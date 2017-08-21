@@ -99,6 +99,7 @@ alias gpush="git push"
 alias gd="git diff"
 alias gall="git add ."
 alias ga="git add"
+alias gam="git commit -am"
 alias glog="git log --oneline --graph --decorate --color"
 
 ########## npm commands #####################
