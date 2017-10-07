@@ -95,12 +95,14 @@ alias gc="git commit -m"
 alias gs="git status"
 alias gp="git pull"
 alias gf="git fetch"
-alias gpush="git push"
+alias gpush="git push origin master"
 alias gd="git diff"
 alias gall="git add ."
 alias ga="git add"
 alias gam="git commit -am"
 alias glog="git log --oneline --graph --decorate --color"
+alias gheroku="git push heroku master"
+alias gt="git tag"
 
 ########## npm commands #####################
 # visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission
@@ -113,5 +115,5 @@ alias nu="time npm uninstall"
 alias nr="npm run"
 
 #### Hexo #####
-alias hexod="hexo deploy"
-alias hexog="hexo generate"
+# alias hexod="hexo deploy"
+# alias hexog="hexo generate"
