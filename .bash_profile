@@ -1,8 +1,8 @@
 export PATH=~/bin:$PATH
-export ANDROID_HOME=/Users/amandeepmittal/
-export PATH=$PATH:/$ANDROID_HOME/platform-tools/
-export PATH=$PATH:/$ANDROID_HOME/tools/
-export PATH=$PATH:/$ANDROID_HOME/build-tools/
+export ANDROID_HOME=/Users/amandeepmittal/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools/
+export PATH=$PATH:$ANDROID_HOME/tools/
+export PATH=$PATH:$ANDROID_HOME/build-tools/
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
@@ -117,3 +117,7 @@ alias nr="npm run"
 #### Hexo #####
 # alias hexod="hexo deploy"
 # alias hexog="hexo generate"
+
+#### React Ecosystem ####
+# alias crna="create-react-native-app"
+# alias cra="create-react-app"
