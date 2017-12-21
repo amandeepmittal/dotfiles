@@ -119,5 +119,5 @@ alias nr="npm run"
 # alias hexog="hexo generate"
 
 #### React Ecosystem ####
-# alias crna="create-react-native-app"
-# alias cra="create-react-app"
+alias crna="create-react-native-app"
+alias cra="create-react-app"
