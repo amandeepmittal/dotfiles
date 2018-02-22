@@ -121,3 +121,4 @@ alias nr="npm run"
 #### React Ecosystem ####
 alias crna="create-react-native-app"
 alias cra="create-react-app"
+alias rn="react-native"
