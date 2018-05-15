@@ -3,6 +3,8 @@ export ANDROID_HOME=/Users/amandeepmittal/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/platform-tools/
 export PATH=$PATH:$ANDROID_HOME/tools/
 export PATH=$PATH:$ANDROID_HOME/build-tools/
+export PATH=${PATH}:/usr/local/mysql/bin
+
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
