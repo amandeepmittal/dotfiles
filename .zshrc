@@ -10,6 +10,9 @@ export PATH=$PATH:$ANDROID_HOME/build-tools/
 export PATH=${PATH}:/usr/local/mysql/bin
 
 
+alias sudo='nocorrect sudo'
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/amanhimself/.oh-my-zsh
 
