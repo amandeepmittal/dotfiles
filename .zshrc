@@ -187,4 +187,4 @@ alias gt="git tag"
 
 ##### EXPO #######
 alias expoinit="expo-cli init"
-alias expostart="expi-cli start"
+alias expostart="expo-cli start"
