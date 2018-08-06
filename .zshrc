@@ -184,3 +184,7 @@ alias gam="git commit -am"
 alias glog="git log --oneline --graph --decorate --color"
 alias gheroku="git push heroku master"
 alias gt="git tag"
+
+##### EXPO #######
+alias expoinit="expo-cli init"
+alias expostart="expi-cli start"
