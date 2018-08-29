@@ -186,8 +186,7 @@ alias gheroku="git push heroku master"
 alias gt="git tag"
 
 ##### EXPO #######
-alias einit="expo-cli init"
-alias estart="expo-cli start"
+alias expo="expo-cli"
 
 ##### React Native ######
 alias run-ios="react-native run-ios"
