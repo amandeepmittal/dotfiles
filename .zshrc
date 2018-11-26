@@ -19,7 +19,7 @@ export ZSH=/Users/amanhimself/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="spaceship"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs node_version time)
@@ -135,11 +135,8 @@ source $ZSH/oh-my-zsh.sh
 #### Navigation
 alias g="$HOME/Documents/github/"
 alias desktop="$HOME/Desktop"
-alias backup="$HOME/Documents/backup-live/"
 alias n="cd /usr/local/lib/node_modules/ && ls"
 
-# Reload Profile
-alias src="source .zshrc"
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -154,12 +151,9 @@ alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 
 ########## npm commands #####################
 # visit 'https://docs.npmjs.com/getting-started/fixing-npm-permissions' to enable permission
-alias ni="time npm install"
-alias nout="npm outdated -g --depth=0"
-alias ninit="npm init --yes"
-alias nconfig="npm config list"
-alias ncache="time npm --cache-min 999999 install"
-alias nu="time npm uninstall"
+alias npmout="npm outdated -g --depth=0"
+alias npminit="npm init --yes"
+alias npmconfig="npm config list"
 alias nr="npm run"
 
 ### yarn commands
@@ -174,10 +168,7 @@ alias rn="react-native"
 ########## GIT ALIASES ######################
 alias gc="git commit -m"
 alias gs="git status"
-alias gp="git pull"
-alias gf="git fetch"
 alias gpush="git push origin master"
-alias gd="git diff"
 alias gall="git add ."
 alias ga="git add"
 alias gam="git commit -am"
