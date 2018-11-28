@@ -97,7 +97,7 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=’red’
 plugins=(
   git
   zsh-autosuggestions
-
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -131,6 +131,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+## Top 10 Shell Commands
+alias topcmds=history | awk '{print $2}' | sort | uniq -c | sort -rn | head -10
 
 #### Navigation
 alias g="$HOME/Documents/github/"
