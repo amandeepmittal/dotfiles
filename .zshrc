@@ -133,7 +133,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 ## Top 10 Shell Commands
-alias topcmds=history | awk '{print $2}' | sort | uniq -c | sort -rn | head -10
+alias topcmds="history | awk '{print $2}' | sort | uniq -c | sort -rn | head -10"
 
 #### Navigation
 alias g="$HOME/Documents/github/"
