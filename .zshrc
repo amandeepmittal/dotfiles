@@ -187,3 +187,7 @@ alias expo="expo-cli"
 ##### React Native ######
 alias run-ios="react-native run-ios"
 alias run-android="react-native run-android"
+
+## VSCode ##
+
+alias code="open -a /Applications/Visual\ Studio\ Code.app ~/.zshrc"
