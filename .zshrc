@@ -190,7 +190,7 @@ alias run-android="react-native run-android"
 
 ## VSCode ##
 
-alias code="open -a /Applications/Visual\ Studio\ Code.app ~/.zshrc"
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
 
 ## Catalina MongoDB Alias
 
