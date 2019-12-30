@@ -195,3 +195,6 @@ alias code="open -a /Applications/Visual\ Studio\ Code.app"
 ## Catalina MongoDB Alias
 
 alias mongod="mongod --dbpath ~/data/db"
+
+## Android emulator trigger without Android Studio
+alias simdroid="/Users/amanhimself/Library/Android/sdk/emulator/emulator -avd Pixel_2_API_29 -netdelay none -netspeed full"
