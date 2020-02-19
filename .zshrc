@@ -198,3 +198,9 @@ alias mongod="mongod --dbpath ~/data/db"
 
 ## Android emulator trigger without Android Studio
 alias simdroid="/Users/amanhimself/Library/Android/sdk/emulator/emulator -avd Pixel_2_API_29 -netdelay none -netspeed full"
+
+## React Navigation alias
+
+alias exponavpeers="expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view"
+
+alias vanillanavpeers="npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view"
