@@ -201,6 +201,14 @@ alias simdroid="/Users/amanhimself/Library/Android/sdk/emulator/emulator -avd Pi
 
 ## React Navigation alias
 
+function peersInstall() {
+  echo "Running install with $@";
+  echo "- react-native-gesture-handler\n- react-native-reanimated\n- react-native-screens\n- react-native-safe-area-context\n- @react-native-community/masked-view\n"
+  $@ install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view;
+}
+
+### OR
+
 alias exponavpeers="expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view"
 
 alias vanillanavpeers="npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view"
