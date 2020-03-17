@@ -166,7 +166,6 @@ alias ya="yarn add"
 alias yr="yarn run"
 
 #### React Ecosystem ####
-alias crna="create-react-native-app"
 alias cra="create-react-app"
 alias rn="react-native"
 
@@ -191,6 +190,7 @@ alias run-android="react-native run-android"
 ## VSCode ##
 
 alias code="open -a /Applications/Visual\ Studio\ Code.app"
+alias insiders="open -a /Applications/Visual\ Studio\ Code\ -\ Insiders.app"
 
 ## Catalina MongoDB Alias
 
