@@ -214,3 +214,8 @@ function peersInstall() {
 alias exponavpeers="expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view"
 
 alias vanillanavpeers="react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view"
+
+# iOS simulator
+
+## to record while iOS simualtor is open
+alias iosrecord="xcrun simctl io booted recordVideo default-preview.mp4"
