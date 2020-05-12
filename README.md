@@ -8,3 +8,4 @@ This repo contains my personal dot file(s).
 - bash
 - gitignore
 - npmrc
+- settings.json (vscode-insiders)
