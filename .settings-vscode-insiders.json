@@ -32,7 +32,7 @@
     "editor.quickSuggestions": true
   },
   "readTime.enabled": true,
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.4,
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#7970A9",
     "titleBar.activeForeground": "#ffffff",
@@ -40,5 +40,12 @@
     "statusBar.noFolderBackground": "#454158",
     "statusBar.debuggingBackground": "#9580FF"
   },
-  "window.titleBarStyle": "custom"
+  "window.titleBarStyle": "custom",  
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "javascript": "html"
+  }
 }
