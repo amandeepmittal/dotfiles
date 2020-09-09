@@ -9,8 +9,6 @@ export PATH=$PATH:$ANDROID_HOME/tools/
 export PATH=$PATH:$ANDROID_HOME/build-tools/
 export PATH=${PATH}:/usr/local/mysql/bin
 
-# Working Directory
-# cd $HOME/Desktop
 
 alias please='sudo' 
 
