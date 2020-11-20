@@ -38,7 +38,7 @@ alias gs="git status"
 alias gpush="git push origin master"
 alias glog="git log --oneline --graph --decorate --color"
 
-## The function tip is give by (thanks to) Catalin Miron (https://twitter.com/mironcatalin_
+## The function tip is give by (thanks to) Catalin Miron (https://twitter.com/mironcatalin)
 function peersInstall() {
   echo "Running install with $@";
   echo "- react-native-gesture-handler\n- react-native-reanimated\n- react-native-screens\n- react-native-safe-area-context\n- @react-native-community/masked-view\n"
