@@ -2,15 +2,18 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/amanhimself/.oh-my-zsh"
+export ZSH="/Users/amanhimself/.oh-my-zsh/oh-my-zsh.sh"
+
+export PATH=/opt/homebrew/bin:$PATH
+
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-
 ZSH_THEME="spaceship"
+
 
 plugins=(
   git  
@@ -18,17 +21,19 @@ plugins=(
   vscode
 )
 
+ZSH_DISABLE_COMPFIX=true
+
 source $ZSH/oh-my-zsh.sh
 
-# aliases
 alias g="$HOME/Documents/GitHub/"
+
+alias code='code-insiders'
+
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
-
-alias code="open -a /Applications/Visual\ Studio\ Code.app"
 
 # git shorthands
 alias gall="git add ."
@@ -38,6 +43,7 @@ alias gs="git status"
 alias gpush="git push origin master"
 alias glog="git log --oneline --graph --decorate --color"
 
+# React Navigation (v5)
 ## The function tip is give by (thanks to) Catalin Miron (https://twitter.com/mironcatalin)
 function peersInstall() {
   echo "Running install with $@";
@@ -50,3 +56,6 @@ function peersInstall() {
 alias exponav="expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view"
 
 alias rnav="react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view"
+
+# for the time being
+arch="arch -x86_64"
