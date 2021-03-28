@@ -50,6 +50,9 @@ alias gs="git status"
 alias gpush="git push origin master"
 alias glog="git log --oneline --graph --decorate --color"
 
+## React Native dev build shorthands
+alias run-ios="npx react-native run-ios"
+
 # React Navigation (v5)
 ## The function tip is give by (thanks to) Catalin Miron (https://twitter.com/mironcatalin)
 function peersInstall() {
