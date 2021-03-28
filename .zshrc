@@ -14,20 +14,27 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ZSH_THEME="spaceship"
 
-
 plugins=(
   git  
   node
   vscode
+  zsh-syntax-highlighting
 )
 
 ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
+source /Users/amanhimself/.oh-my-zsh/oh-my-zsh.sh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias g="$HOME/Documents/GitHub/"
 
-alias code='code-insiders'
+alias insiders='code-insiders'
+alias code='open -a Visual\ Studio\ Code.app'
+
 
 
 # Show/Hide hidden files in Finder
@@ -56,6 +63,8 @@ function peersInstall() {
 alias exponav="expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view"
 
 alias rnav="react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view"
+
+alias addnavtoexpo="yarn add @react-navigation/native @react-navigation/stack @react-navigation/bottom-tabs && expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view"
 
 # for the time being
 arch="arch -x86_64"
