@@ -1,8 +1,8 @@
 {
   "editor.tabSize": 2,
-  "editor.fontSize": 12,
+  "editor.fontSize": 13,
   "editor.fontFamily": "Jetbrains Mono, 'Courier New', monospace",
-  "workbench.colorTheme": "morgan.codes",
+  "workbench.colorTheme": "fairyfloss",
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "expand",
@@ -27,7 +27,6 @@
     ".expo": true,
     ".vscode": true
   },
-  "window.zoomLevel": 0.4,
   "explorer.confirmDelete": false,
   "workbench.editor.tabSizing": "shrink",
   "breadcrumbs.enabled": true,
@@ -44,11 +43,8 @@
   "json.schemas": [
     {
       "name": "vscode-expo-manifest",
-      "url": "file:///Users/amanhimself/Library/Application%20Support/Code%20-%20Insiders/User/globalStorage/bycedric.vscode-expo/manifest-40.0.0.json",
-      "fileMatch": [
-        "app.json",
-        "app.config.json"
-      ]
+      "url": "file:///Users/amanhimself/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-40.0.0.json",
+      "fileMatch": ["app.json", "app.config.json"]
     }
   ],
   "codestats.apikey": "SFMyNTY.WVcxaGJtMXBkSFJoYkE9PSMjTkRZPQ.PH2klCfr2hQisuH3R9j2eG-IsA1Usb7EqrPstWkovOA",
@@ -115,5 +111,35 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "Draftbit",
+    "Ionicons",
+    "Macbook",
+    "Postgres",
+    "Supabase",
+    "destructured",
+    "firestore"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 0.8,
+  "workbench.startupEditor": "welcomePage",
+
+  // for fairyFloss theme
+  "editor.tokenColorCustomizations": {
+    "[fairyfloss]": {
+      "comments": {
+        "foreground": "#8d99ae"
+      }
+    }
   }
 }
