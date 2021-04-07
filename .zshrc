@@ -47,7 +47,7 @@ alias gall="git add ."
 alias ga="git add"
 alias gc="git commit -m"
 alias gs="git status"
-alias gpush="git push origin master"
+alias gpush="git push -u origin"
 alias glog="git log --oneline --graph --decorate --color"
 
 ## React Native dev build shorthands
