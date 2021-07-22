@@ -71,3 +71,9 @@ alias addnavtoexpo="yarn add @react-navigation/native @react-navigation/stack @r
 
 # for the time being
 arch="arch -x86_64"
+
+# for running target iOS simulator
+alias iphonesim="npx react-native run-ios --simulator='iPhone 12 mini'"
+
+# run git log watcher inside a .git repo
+alias gwl="git-watch-log | lolcat"
