@@ -77,3 +77,7 @@ alias iphonesim="npx react-native run-ios --simulator='iPhone 12 mini'"
 
 # run git log watcher inside a .git repo
 alias gwl="git-watch-log | lolcat"
+
+# other lolcat piped aliases
+alias ls="ls | lolcat"
+alias lsal="ls -al | lolcat"
