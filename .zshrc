@@ -80,4 +80,4 @@ alias gwl="git-watch-log | lolcat"
 
 # other lolcat piped aliases
 alias ls="ls | lolcat"
-alias lsal="ls -al | lolcat"
+alias lsa="ls -a | lolcat"
