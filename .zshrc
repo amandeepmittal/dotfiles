@@ -75,8 +75,12 @@ arch="arch -x86_64"
 # for running target iOS simulator
 alias iphonesim="npx react-native run-ios --simulator='iPhone 12 mini'"
 
+# npkill - delete node_modules
+alias npkill="npx npkill"
+
 # run git log watcher inside a .git repo
 alias gwl="git-watch-log | lolcat"
+
 
 # other lolcat piped aliases
 alias ls="ls | lolcat"
