@@ -5,7 +5,5 @@
 This repo contains my personal dot file(s).
 
 - zsh
-- bash
 - gitignore
-- npmrc
 - settings.json (vscode-insiders)
