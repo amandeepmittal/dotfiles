@@ -1,9 +1,16 @@
 {
+  // VSCODE EDITOR
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.startupEditor": "welcomePage",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.tabSizing": "shrink",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "window.restoreFullscreen": true,
   "editor.tabSize": 2,
   "editor.fontSize": 13,
-  "editor.fontFamily": "Jetbrains Mono, 'Courier New', monospace",
-  "workbench.colorTheme": "fairyfloss",
-  "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "expand",
   "editor.fontLigatures": false,
@@ -12,14 +19,11 @@
   "editor.tabCompletion": "on",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "workbench.editor.enablePreview": false,
-  "window.restoreFullscreen": true,
-  "window.title": "${activeEditorShort}${separator}${rootName}",
+  "breadcrumbs.enabled": false,
+  "explorer.openEditors.visible": 0,
   "search.exclude": {
     "**/node_modules": true,
     "**/*.code-search": true,
-    "ios/": true,
-    "android/": true,
     "dist/": true,
     "yarn.lock": true,
     "package-lock.json": true,
@@ -27,29 +31,25 @@
     ".expo": true,
     ".vscode": true
   },
-  "explorer.confirmDelete": false,
-  "workbench.editor.tabSizing": "shrink",
-  "breadcrumbs.enabled": true,
-  "explorer.openEditors.visible": 0,
-  // "editor.multiCursorModifier": "ctrlCmd",
-
-  // Integrated Terminal
-  "terminal.integrated.shell.osx": "zsh",
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontSize": 12,
-
-  // Extensions
   "extensions.autoUpdate": false,
+  // "editor.multiCursorModifier": "ctrlCmd",
+  // --------------------------------------
+  // EXPO TOOLS
   "json.schemas": [
     {
       "name": "vscode-expo-manifest",
-      "url": "file:///Users/amanhimself/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-40.0.0.json",
+      "url": "file:///Users/amanhimself/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-42.0.0.json",
       "fileMatch": ["app.json", "app.config.json"]
     }
   ],
+  // --------------------------------------
+  // CODE::STATS EXTENSION
   "codestats.apikey": "SFMyNTY.WVcxaGJtMXBkSFJoYkE9PSMjTkRZPQ.PH2klCfr2hQisuH3R9j2eG-IsA1Usb7EqrPstWkovOA",
+  // --------------------------------------
+  // READ TIME EXTENSION
   "readTime.enabled": true,
-  "bracket-pair-colorizer-2.colors": ["#F72585", "#94b4a4", "#a3d8f4"],
+  // --------------------------------------
+  // HIGHLIGHT MATCHING TAG EXTENSION
   "highlight-matching-tag.styles": {
     "opening": {
       "name": {
@@ -58,10 +58,22 @@
       }
     }
   },
+  // --------------------------------------
+  // INTEGRATED TERMINAL
+  // "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontSize": 12,
+  // --------------------------------------
+  // NPM
   "npm-intellisense.importES6": true,
+  // --------------------------------------
+  // TS IMPORT SUGGESTION
   "typescript.suggest.paths": false,
-
-  // Prettier
+  // --------------------------------------
+  // BRACKET PAIR COLORIZER 2
+  "bracket-pair-colorizer-2.colors": ["#F72585", "#94b4a4", "#a3d8f4"],
+  // --------------------------------------
+  // PRETTIER ----------------------------------
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "prettier.trailingComma": "none",
@@ -71,75 +83,87 @@
   "prettier.jsxBracketSameLine": false,
   "prettier.bracketSpacing": true,
   "prettier.tabWidth": 2,
-
-  // Macros
-  "macros": {
-    "collapseAndClose": [
-      "workbench.files.action.collapseExplorerFolders",
-      "workbench.action.closeAllEditors"
-    ]
-  },
-
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // Markdown
   "[markdown]": {
     "editor.quickSuggestions": true
   },
-
   // JSON
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // JavaScript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // JavaScript + React
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // TypeScript
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   // TypeScript + React
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // JSON with Comments
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.userWords": [
-    "Draftbit",
-    "Ionicons",
-    "Macbook",
-    "Postgres",
-    "Supabase",
-    "destructured",
-    "firestore"
-  ],
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ----------------------------------
+  // ESLINT
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ],
-  "explorer.confirmDragAndDrop": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.zoomLevel": 0.8,
-  "workbench.startupEditor": "welcomePage",
-
-  // for fairyFloss theme
-  "editor.tokenColorCustomizations": {
-    "[fairyfloss]": {
-      "comments": {
-        "foreground": "#8d99ae"
-      }
-    }
-  }
+  // --------------------------------------
+  // ERROR LENS
+  // "errorLens.fontSize": "11",
+  // "errorLens.onSave": true,
+  // "errorLens.enabledDiagnosticLevels": ["error", "warning", "hint"],
+  // "workbench.colorCustomizations": {
+  //   "errorLens.hintForeground": "#ffc600A1",
+  //   "errorLens.hintBackground": "#ff00dd2f",
+  //   "errorLens.errorBackground": "#ff000005",
+  //   "editor.selectionBackground": "#ff1493",
+  //   "editor.selectionHighlightBackground": "#ff1493",
+  //   "editor.findMatchBackground": "#ff1493",
+  //   "editor.findMatchHighlightBackground": "#3cb371"
+  // },
+  // "errorLens.exclude": ["never (read|used)"],
+  // --------------------------------------
+  // LANGUAGES SPECIFIC
+  "javascript.updateImportsOnFileMove.enabled": "always"
+  // --------------------------------------
+  // GITHUB COPILOT
+  // "editor.inlineSuggest.enabled": true,
+  // "github.copilot.inlineSuggest.enable": true,
+  // "github.copilot.enable": {
+  //   "*": true,
+  //   "yaml": false,
+  //   "plaintext": false,
+  //   "javascript": true,
+  //   "markdown": true,
+  //   "javascriptreact": true,
+  //   "typescript": true,
+  //   "typescriptreact": true
+  // },
+  // "emmet.triggerExpansionOnTab": false,
+  // --------------------------------------
+  // CUSTOMIZED FAIRY FLOSS THEME
+  // "editor.tokenColorCustomizations": {
+  //   "[fairyfloss]": {
+  //     "comments": {
+  //       "foreground": "#8d99ae"
+  //     }
+  //   }
+  // },
 }
