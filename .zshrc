@@ -46,6 +46,7 @@ alias gc="git commit -m"
 alias gs="git status"
 alias gpush="git push -u origin"
 alias glog="git log --oneline --graph --decorate --color"
+alias gap="git add -p"
 
 # alias for yarn
 alias y="yarn"
