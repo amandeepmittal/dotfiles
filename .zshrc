@@ -53,3 +53,6 @@ alias y="yarn"
 
 # npkill - delete node_modules
 alias npkill="npx npkill"
+
+# check outdated global dependencies
+alias npmcheck="npx npm-check -gu"
