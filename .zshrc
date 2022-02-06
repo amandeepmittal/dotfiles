@@ -13,6 +13,11 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Only if using nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 ZSH_THEME="spaceship"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -48,6 +53,7 @@ alias gpush="git push -u origin"
 alias glog="git log --oneline --graph --decorate --color"
 alias gap="git add -p"
 alias gck="git checkout"
+alias gb="git branch"
 
 # alias for yarn
 alias y="yarn"
