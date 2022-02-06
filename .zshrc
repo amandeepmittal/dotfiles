@@ -6,6 +6,7 @@ export ZSH="/Users/amanhimself/.oh-my-zsh"
 
 export PATH=/opt/homebrew/bin:$PATH
 
+# Only add them for Android development/Android Studio installed
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -13,7 +14,6 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ZSH_THEME="spaceship"
-
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
@@ -47,12 +47,19 @@ alias gs="git status"
 alias gpush="git push -u origin"
 alias glog="git log --oneline --graph --decorate --color"
 alias gap="git add -p"
+alias gck="git checkout"
 
 # alias for yarn
 alias y="yarn"
+
+# alias for npm run
+alias nr="npm run"
 
 # npkill - delete node_modules
 alias npkill="npx npkill"
 
 # check outdated global dependencies
 alias npmcheck="npx npm-check -gu"
+
+# Create React Native App
+alias crna="create-react-native-app"
