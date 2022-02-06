@@ -1,6 +1,6 @@
 {
   // VSCODE EDITOR
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Dracula Pro",
   "workbench.startupEditor": "welcomePage",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.tabSizing": "shrink",
@@ -10,16 +10,17 @@
   "workbench.editor.enablePreview": false,
   "window.restoreFullscreen": true,
   "editor.tabSize": 2,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.minimap.enabled": false,
-  "editor.cursorBlinking": "expand",
+  "editor.cursorBlinking": "phase",
   "editor.fontLigatures": false,
   "editor.wordWrap": "on",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.tabCompletion": "on",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "breadcrumbs.enabled": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.guides.bracketPairs": true,
   "explorer.openEditors.visible": 0,
   "search.exclude": {
     "**/node_modules": true,
@@ -32,19 +33,18 @@
     ".vscode": true
   },
   "extensions.autoUpdate": false,
-  // "editor.multiCursorModifier": "ctrlCmd",
   // --------------------------------------
   // EXPO TOOLS
   "json.schemas": [
     {
       "name": "vscode-expo-manifest",
-      "url": "file:///Users/amanhimself/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-42.0.0.json",
+      "url": "file:///Users/amanhimself/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
       "fileMatch": ["app.json", "app.config.json"]
     }
   ],
   // --------------------------------------
   // CODE::STATS EXTENSION
-  "codestats.apikey": "SFMyNTY.WVcxaGJtMXBkSFJoYkE9PSMjTkRZPQ.PH2klCfr2hQisuH3R9j2eG-IsA1Usb7EqrPstWkovOA",
+  "codestats.apikey": "insert-api-key",
   // --------------------------------------
   // READ TIME EXTENSION
   "readTime.enabled": true,
@@ -70,8 +70,17 @@
   // TS IMPORT SUGGESTION
   "typescript.suggest.paths": false,
   // --------------------------------------
-  // BRACKET PAIR COLORIZER 2
-  "bracket-pair-colorizer-2.colors": ["#F72585", "#94b4a4", "#a3d8f4"],
+  // NATIVE BRACKER PAIR COLOR SETTINGS
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#ffb86c",
+    "editorBracketHighlight.foreground2": "#8be9fd",
+    "editorBracketHighlight.foreground3": "#bd93f9",
+    "editorBracketHighlight.foreground4": "#50fa7b",
+    "editorBracketHighlight.foreground5": "#f1fa8c",
+    "editorBracketHighlight.foreground6": "#abb2c0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5555"
+  },
   // --------------------------------------
   // PRETTIER ----------------------------------
   "prettier.singleQuote": true,
@@ -141,7 +150,15 @@
   // "errorLens.exclude": ["never (read|used)"],
   // --------------------------------------
   // LANGUAGES SPECIFIC
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.banner": "never",
+  "emmet.includeLanguages": {
+    "typescript": "typescriptreact",
+    "javascript": "javascriptreact"
+  },
+  "cSpell.userWords": ["Chakra", "Parens"],
+  "git.autofetch": true
+
   // --------------------------------------
   // GITHUB COPILOT
   // "editor.inlineSuggest.enabled": true,
