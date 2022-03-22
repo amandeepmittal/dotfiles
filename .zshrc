@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Open GitHub directory
-alias g="$HOME/GitHub/"
+alias g="$HOME/Documents/GitHub/"
 
 # Open current directory in VSCode
 alias code='open -a Visual\ Studio\ Code.app'
@@ -43,6 +43,12 @@ alias code='open -a Visual\ Studio\ Code.app'
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Show touch on iOS simulator
+alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
+
+# Hide touch on iOS simulator
+alias hidetouch="defaults write com.apple.iphonesimulator ShowSingleTouches 0"
 
 # git shorthands
 alias gall="git add ."
@@ -69,3 +75,7 @@ alias npmcheck="npx npm-check -gu"
 
 # Create React Native App
 alias crna="create-react-native-app"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
