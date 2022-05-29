@@ -33,6 +33,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+########################### Aliases that I use ###########################
+
 # Open GitHub directory
 alias g="$HOME/Documents/GitHub/"
 
@@ -63,6 +65,11 @@ alias gb="git branch"
 
 # alias for yarn
 alias y="yarn"
+alias ya="yarn add"
+
+# alias for expo (installing dependencies)
+alias e="expo"
+alias ei="expo install"
 
 # alias for npm run
 alias nr="npm run"
@@ -76,6 +83,29 @@ alias npmcheck="npx npm-check -gu"
 # Create React Native App
 alias crna="create-react-native-app"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+########################### Quickly Installing React Navigation and its peers deps ###########################
+
+## The function tip is give by (thanks to) Catalin Miron (https://twitter.com/mironcatalin) for the following function
+function rnavPeerInstall() {
+  echo "Running install with $@";
+  echo "- react-native-screens\n- react-native-safe-area-context"
+  $@ install react-native-screens react-native-safe-area-context;
+}
+
+function drawerPeerInstall() {
+  echo "Running install with $@";
+  echo "- react-native-gesture-handler\n- react-native-reanimated"
+  $@ install react-native-gesture-handler react-native-reanimated;
+}
+
+function stackPeerInstall() {
+  echo "Running install with $@";
+  echo "- react-native-gesture-handler"
+  $@ install react-native-gesture-handler;
+}
+
+########################### End of file stuff ###########################
+
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
