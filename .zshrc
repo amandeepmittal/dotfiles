@@ -41,6 +41,9 @@ alias g="$HOME/Documents/GitHub/"
 # Open current directory in VSCode
 alias code='open -a Visual\ Studio\ Code.app'
 
+# Override "ls" with "ls -a"
+alias ls="ls -a"
+
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
