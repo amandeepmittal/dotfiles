@@ -2,8 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/amanhimself/.oh-my-zsh"
-
+export ZSH="$HOME/.oh-my-zsh"
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 
 # Only add them for Android development/Android Studio installed
@@ -31,7 +32,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/amanhimself2/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ########################### Aliases that I use ###########################
 
@@ -85,27 +86,6 @@ alias npmcheck="npx npm-check -gu"
 
 # Create React Native App
 alias crna="create-react-native-app"
-
-########################### Quickly Installing React Navigation and its peers deps ###########################
-
-## The function tip is give by (thanks to) Catalin Miron (https://twitter.com/mironcatalin) for the following function
-function rnavPeerInstall() {
-  echo "Running install with $@";
-  echo "- react-native-screens\n- react-native-safe-area-context"
-  $@ install react-native-screens react-native-safe-area-context;
-}
-
-function drawerPeerInstall() {
-  echo "Running install with $@";
-  echo "- react-native-gesture-handler\n- react-native-reanimated"
-  $@ install react-native-gesture-handler react-native-reanimated;
-}
-
-function stackPeerInstall() {
-  echo "Running install with $@";
-  echo "- react-native-gesture-handler"
-  $@ install react-native-gesture-handler;
-}
 
 ########################### End of file stuff ###########################
 
