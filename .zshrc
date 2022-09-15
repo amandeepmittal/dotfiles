@@ -87,6 +87,10 @@ alias npmcheck="npx npm-check -gu"
 # Create React Native App
 alias crna="create-react-native-app"
 
+# alias for opening expo/docs directory directly
+
+alias ed="$HOME/Documents/GitHub/expo/docs"
+
 ########################### End of file stuff ###########################
 
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
