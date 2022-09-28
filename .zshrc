@@ -88,8 +88,10 @@ alias npmcheck="npx npm-check -gu"
 alias crna="create-react-native-app"
 
 # alias for opening expo/docs directory directly
-
 alias ed="$HOME/Documents/GitHub/expo/docs"
+
+# alias for checking outdated global packages via npm-check
+alias nnc="sudo npx npm-check -gu"
 
 ########################### End of file stuff ###########################
 
