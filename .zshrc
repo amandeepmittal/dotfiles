@@ -93,6 +93,9 @@ alias ed="$HOME/Documents/GitHub/expo/docs"
 # alias for checking outdated global packages via npm-check
 alias nnc="sudo npx npm-check -gu"
 
+# alias for upgrading outdated packages and cleaning up outdated files
+alias hbc="brew update && brew upgrade && brew cleanup"
+
 ########################### End of file stuff ###########################
 
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
