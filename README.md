@@ -6,4 +6,4 @@ This repo contains my personal dot file(s).
 
 - zsh
 - gitignore
-- settings.json (vscode-insiders)
+- settings.json (VSCode)
