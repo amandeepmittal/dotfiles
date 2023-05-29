@@ -84,10 +84,16 @@ alias npkill="npx npkill"
 # check outdated global dependencies
 alias npmcheck="npx npm-check -gu"
 
-# Create React Native App
-alias crna="create-react-native-app"
+# clear central/global npx cache
+alias clearnpx="rm -rf ~/.npm/_npx"
+
+# alias for yarn
+alias y="yarn"
+alias ya="yarn add"
+alias yr="yarn run"
 
 # alias for opening expo/docs directory directly
+
 alias ed="$HOME/Documents/GitHub/expo/docs"
 
 # alias for checking outdated global packages via npm-check
@@ -98,6 +104,15 @@ alias hbc="brew update && brew upgrade && brew cleanup"
 
 ########################### End of file stuff ###########################
 
+eval "$(rbenv init - zsh)"
+
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/amanhimself2/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/amanhimself2/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/amanhimself2/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/amanhimself2/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(direnv hook zsh)"
