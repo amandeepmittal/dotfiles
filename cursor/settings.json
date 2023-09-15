@@ -1,0 +1,74 @@
+{
+  "editor.tabSize": 2,
+  "workbench.editor.tabSizing": "shrink",
+  "editor.cursorBlinking": "phase",
+  "editor.fontLigatures": false,
+  "editor.wordWrap": "on",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.tabCompletion": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "readTime.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.language": "en,en-US",
+  "cSpell.enableFiletypes": ["markdown", "mdx"],
+  "editor.inlineSuggest.enabled": true,
+  // Markdown
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JavaScript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JavaScript + React
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // TypeScript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // TypeScript + React
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JSON with Comments
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "grammarly.files.include": [
+    "**/README.md",
+    "**/readme.md",
+    "**/*.txt",
+    "**/*.md",
+    "**/*.mdx"
+  ],
+  // ----------------------------------
+  // ESLINT
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // CODE::STATS EXTENSION
+  "codestats.apikey": "SFMyNTY.WVcxaGJtMXBkSFJoYkE9PSMjTkRZPQ.PH2klCfr2hQisuH3R9j2eG-IsA1Usb7EqrPstWkovOA"
+}
