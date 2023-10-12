@@ -5,6 +5,7 @@ ffmpeg
 git
 git-crypt
 git-lfs
+imageoptim
 nvm
 rbenv
 readline
