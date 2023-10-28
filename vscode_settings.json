@@ -1,101 +1,31 @@
 {
-  // VSCODE EDITOR
-  "workbench.colorTheme": "Dracula Pro",
-  "workbench.startupEditor": "welcomePage",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.tabSizing": "shrink",
-  "security.workspace.trust.untrustedFiles": "open",
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.editor.enablePreview": false,
-  "window.restoreFullscreen": true,
   "editor.tabSize": 2,
-  "editor.fontSize": 14,
-  "editor.minimap.enabled": false,
+  "workbench.editor.tabSizing": "shrink",
   "editor.cursorBlinking": "phase",
   "editor.fontLigatures": false,
   "editor.wordWrap": "on",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.tabCompletion": "on",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "git.openRepositoryInParentFolders": "always",
   "editor.semanticHighlighting.enabled": true,
   "editor.guides.bracketPairs": true,
-  "explorer.openEditors.visible": 0,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/*.code-search": true,
-    "dist/": true,
-    "yarn.lock": true,
-    "package-lock.json": true,
-    ".gitignore": true,
-    ".expo": true,
-    ".vscode": true
-  },
-  "extensions.autoUpdate": false,
-  // --------------------------------------
-  // EXPO TOOLS
-  "json.schemas": [
-    {
-      "name": "vscode-expo-manifest",
-      "url": "file:///Users/amanhimself/Library/Application%20Support/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
-      "fileMatch": ["app.json", "app.config.json"]
-    }
-  ],
-  // --------------------------------------
-  // CODE::STATS EXTENSION
-  "codestats.apikey": "insert-api-key",
-  // --------------------------------------
-  // READ TIME EXTENSION
-  "readTime.enabled": true,
-  // --------------------------------------
-  // HIGHLIGHT MATCHING TAG EXTENSION
-  "highlight-matching-tag.styles": {
-    "opening": {
-      "name": {
-        // surround is border
-        "surround": "yellow"
-      }
-    }
-  },
-  // --------------------------------------
-  // INTEGRATED TERMINAL
-  // "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.integrated.fontSize": 12,
-  // --------------------------------------
-  // NPM
-  "npm-intellisense.importES6": true,
-  // --------------------------------------
-  // TS IMPORT SUGGESTION
-  "typescript.suggest.paths": false,
-  // --------------------------------------
-  // NATIVE BRACKER PAIR COLOR SETTINGS
   "editor.bracketPairColorization.enabled": true,
-  "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#ffb86c",
-    "editorBracketHighlight.foreground2": "#8be9fd",
-    "editorBracketHighlight.foreground3": "#bd93f9",
-    "editorBracketHighlight.foreground4": "#50fa7b",
-    "editorBracketHighlight.foreground5": "#f1fa8c",
-    "editorBracketHighlight.foreground6": "#abb2c0",
-    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5555"
-  },
-  // --------------------------------------
-  // PRETTIER ----------------------------------
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.trailingComma": "none",
-  "prettier.arrowParens": "avoid",
-  "prettier.proseWrap": "preserve",
-  "prettier.quoteProps": "as-needed",
-  "prettier.jsxBracketSameLine": false,
-  "prettier.bracketSpacing": true,
-  "prettier.tabWidth": 2,
+  "files.trimTrailingWhitespace": true,
+  "readTime.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.language": "en,en-US",
+  "cSpell.enableFiletypes": ["markdown", "mdx"],
+  "editor.inlineSuggest.enabled": true,
+  "workbench.editor.enablePreview": false,
   // Markdown
   "[markdown]": {
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
   // JSON
   "[json]": {
@@ -125,6 +55,13 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "grammarly.files.include": [
+    "**/README.md",
+    "**/readme.md",
+    "**/*.txt",
+    "**/*.md",
+    "**/*.mdx"
+  ],
   // ----------------------------------
   // ESLINT
   "eslint.validate": [
@@ -133,54 +70,44 @@
     "typescript",
     "typescriptreact"
   ],
-  // --------------------------------------
-  // ERROR LENS
-  // "errorLens.fontSize": "11",
-  // "errorLens.onSave": true,
-  // "errorLens.enabledDiagnosticLevels": ["error", "warning", "hint"],
-  // "workbench.colorCustomizations": {
-  //   "errorLens.hintForeground": "#ffc600A1",
-  //   "errorLens.hintBackground": "#ff00dd2f",
-  //   "errorLens.errorBackground": "#ff000005",
-  //   "editor.selectionBackground": "#ff1493",
-  //   "editor.selectionHighlightBackground": "#ff1493",
-  //   "editor.findMatchBackground": "#ff1493",
-  //   "editor.findMatchHighlightBackground": "#3cb371"
-  // },
-  // "errorLens.exclude": ["never (read|used)"],
-  // --------------------------------------
-  // LANGUAGES SPECIFIC
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "security.workspace.trust.banner": "never",
-  "emmet.includeLanguages": {
-    "typescript": "typescriptreact",
-    "javascript": "javascriptreact"
+  // CODE::STATS EXTENSION
+  "codestats.apikey": "",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "files.associations": {
+    ".env*": "dotenv"
   },
-  "cSpell.userWords": ["Chakra", "Parens"],
-  "git.autofetch": true
-
-  // --------------------------------------
-  // GITHUB COPILOT
-  // "editor.inlineSuggest.enabled": true,
-  // "github.copilot.inlineSuggest.enable": true,
-  // "github.copilot.enable": {
-  //   "*": true,
-  //   "yaml": false,
-  //   "plaintext": false,
-  //   "javascript": true,
-  //   "markdown": true,
-  //   "javascriptreact": true,
-  //   "typescript": true,
-  //   "typescriptreact": true
-  // },
-  // "emmet.triggerExpansionOnTab": false,
-  // --------------------------------------
-  // CUSTOMIZED FAIRY FLOSS THEME
-  // "editor.tokenColorCustomizations": {
-  //   "[fairyfloss]": {
-  //     "comments": {
-  //       "foreground": "#8d99ae"
-  //     }
-  //   }
-  // },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "workbench.activityBar.visible": true,
+  "cSpell.userWords": ["gtag"],
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 12.5
 }
