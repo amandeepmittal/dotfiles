@@ -3,25 +3,15 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 
-# Only add them for Android development/Android Studio installed
+# Android specific
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# Only if using nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
+# Oh my zsh config
 ZSH_THEME="spaceship"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(
@@ -32,18 +22,17 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/amanhimself2/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Only if using nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 ########################### Aliases that I use ###########################
 
 # Open GitHub directory
 alias g="$HOME/Documents/GitHub/"
-
-# Open current directory in VSCode
-alias code='open -a Visual\ Studio\ Code.app'
-
-# Override "ls" with "ls -a"
-alias ls="ls -a"
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -67,52 +56,14 @@ alias gap="git add -p"
 alias gck="git checkout"
 alias gb="git branch"
 
-# alias for yarn
-alias y="yarn"
-alias ya="yarn add"
+# alias for upgrading outdated packages and cleaning up outdated files
+alias hbc="brew update && brew upgrade && brew cleanup"
 
-# alias for expo (installing dependencies)
-alias e="expo"
-alias ei="expo install"
 
-# alias for npm run
-alias nr="npm run"
-
-# npkill - delete node_modules
-alias npkill="npx npkill"
-
-# check outdated global dependencies
-alias npmcheck="npx npm-check -gu"
-
-# clear central/global npx cache
-alias clearnpx="rm -rf ~/.npm/_npx"
-
-# alias for yarn
-alias y="yarn"
-alias ya="yarn add"
-alias yr="yarn run"
+# for work
 
 # alias for opening expo/docs directory directly
 
 alias ed="$HOME/Documents/GitHub/expo/docs"
 
-# alias for checking outdated global packages via npm-check
-alias nnc="sudo npx npm-check -gu"
-
-# alias for upgrading outdated packages and cleaning up outdated files
-alias hbc="brew update && brew upgrade && brew cleanup"
-
-########################### End of file stuff ###########################
-
-eval "$(rbenv init - zsh)"
-
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/amanhimself2/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/amanhimself2/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/amanhimself2/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/amanhimself2/google-cloud-sdk/completion.zsh.inc'; fi
-eval "$(direnv hook zsh)"
+################ END OF FILE configs ################
