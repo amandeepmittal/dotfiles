@@ -67,3 +67,5 @@ alias hbc="brew update && brew upgrade && brew cleanup"
 alias ed="$HOME/Documents/GitHub/expo/docs"
 
 ################ END OF FILE configs ################
+
+eval "$(direnv hook zsh)"
