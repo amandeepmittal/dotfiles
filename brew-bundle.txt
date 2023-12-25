@@ -1,6 +1,7 @@
 cocoapods
 direnv
 exa
+expo-orbit
 ffmpeg
 git
 git-crypt
