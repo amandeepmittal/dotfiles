@@ -5,14 +5,25 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 
-# Android specific
+# Required for Expo and React Native local app development
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
+# Android specific paths after installing Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# Oh my zsh config
-ZSH_THEME="spaceship"
-DISABLE_AUTO_UPDATE="true"
+# To stop brew from auto updating
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+ZSH_THEME="amuse"
+
+
+# Uncomment one of the following lines to change the auto-update behavior
+zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+ENABLE_CORRECTION="true"
 
 plugins=(
   git
@@ -24,20 +35,21 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Only if using nvm
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-########################### Aliases that I use ###########################
-
-# Open GitHub directory
-alias g="$HOME/Documents/GitHub/"
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
+
+########################### Aliases that I use ###########################
+alias g="$HOME/Documents/GitHub/"
+
+alias zshsrc="source ~/.zshrc"
 
 # Show touch on iOS simulator
 alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
@@ -59,8 +71,7 @@ alias gb="git branch"
 # alias for upgrading outdated packages and cleaning up outdated files
 alias hbc="brew update && brew upgrade && brew cleanup"
 
-
-# for work
+# Work
 
 # alias for opening expo/docs directory directly
 
