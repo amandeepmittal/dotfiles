@@ -19,6 +19,15 @@
   "cSpell.enableFiletypes": ["markdown", "mdx"],
   "editor.inlineSuggest.enabled": true,
   "workbench.editor.enablePreview": false,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 12.5,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.productIconTheme": "macos-modern",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.activityBar.location": "top",
+  "editor.fontFamily": "JetBrains Mono ",
+  "editor.fontWeight": "normal",
   // Markdown
   "[markdown]": {
     "editor.quickSuggestions": {
@@ -71,8 +80,7 @@
     "typescriptreact"
   ],
   // CODE::STATS EXTENSION
-  "codestats.apikey": "",
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "codestats.apikey": "SFMyNTY.WVcxaGJtMXBkSFJoYkE9PSMjTkRZPQ.PH2klCfr2hQisuH3R9j2eG-IsA1Usb7EqrPstWkovOA",
   "files.associations": {
     ".env*": "dotenv"
   },
@@ -106,8 +114,6 @@
       }
     ]
   },
-  "workbench.activityBar.visible": true,
   "cSpell.userWords": ["gtag"],
-  "editor.minimap.enabled": false,
-  "editor.fontSize": 12.5
+  "editor.accessibilitySupport": "off"
 }
