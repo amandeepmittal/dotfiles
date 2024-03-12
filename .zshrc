@@ -16,14 +16,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # To stop brew from auto updating
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-ZSH_THEME="amuse"
-
+ZSH_THEME="agnoster"
 
 # Uncomment one of the following lines to change the auto-update behavior
 zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
-ENABLE_CORRECTION="true"
+
 
 plugins=(
   git
@@ -49,7 +48,7 @@ alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 ########################### Aliases that I use ###########################
 alias g="$HOME/Documents/GitHub/"
 
-alias zshsrc="source ~/.zshrc"
+alias zshrc="source ~/.zshrc"
 
 # Show touch on iOS simulator
 alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
