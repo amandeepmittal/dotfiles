@@ -16,7 +16,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # To stop brew from auto updating
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 
 # Uncomment one of the following lines to change the auto-update behavior
 zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -34,11 +34,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
+# Custom scripts
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 
 # Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -78,4 +77,5 @@ alias ed="$HOME/Documents/GitHub/expo/docs"
 
 ################ END OF FILE configs ################
 
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
+eval "$(starship init zsh)"
