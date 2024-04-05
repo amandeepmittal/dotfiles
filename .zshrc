@@ -16,7 +16,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # To stop brew from auto updating
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-# ZSH_THEME="agnoster"
+# ZSH_THEME="robbyrussell"
 
 # Uncomment one of the following lines to change the auto-update behavior
 zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -24,30 +24,35 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  node
-  vscode
-  zsh-syntax-highlighting
-)
+    git
+     node
+     vscode     
+    )
 
 source $ZSH/oh-my-zsh.sh
-source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 # Custom scripts
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# Show/Hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-alias killds="find . -type f -name '*.DS_Store' -ls -delete"
+# aliases
+## alias zshconfig="mate ~/.zshrc"
+## alias ohmyzsh="mate ~/.oh-my-zsh"
 
-########################### Aliases that I use ###########################
+## Compilation flags
+export ARCHFLAGS="-arch x86_64"
+
+## Opening GitHub directory
 alias g="$HOME/Documents/GitHub/"
-
-alias zshrc="source ~/.zshrc"
 
 # Show touch on iOS simulator
 alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
@@ -55,7 +60,13 @@ alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
 # Hide touch on iOS simulator
 alias hidetouch="defaults write com.apple.iphonesimulator ShowSingleTouches 0"
 
-# git shorthands
+# Show/Hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias killds="find . -type f -name '*.DS_Store' -ls -delete"
+
+
+## git shorthands
 alias gall="git add ."
 alias ga="git add"
 alias gc="git commit -m"
@@ -66,16 +77,13 @@ alias gap="git add -p"
 alias gck="git checkout"
 alias gb="git branch"
 
-# alias for upgrading outdated packages and cleaning up outdated files
-alias hbc="brew update && brew upgrade && brew cleanup"
+## yarn
+alias yarn="y"
 
-# Work
 
-# alias for opening expo/docs directory directly
+## alias for opening expo/docs directory directly
 
 alias ed="$HOME/Documents/GitHub/expo/docs"
 
 ################ END OF FILE configs ################
-
-# eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
