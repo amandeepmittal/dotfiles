@@ -18,13 +18,11 @@
   "cSpell.language": "en,en-US",
   "cSpell.enableFiletypes": ["markdown", "mdx"],
   "editor.inlineSuggest.enabled": true,
-  "workbench.editor.enablePreview": false,
   "editor.minimap.enabled": false,
   "editor.fontSize": 12.5,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.productIconTheme": "macos-modern",
+  "workbench.iconTheme": "city-lights-icons-vsc",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Catppuccin Latte",
   "workbench.activityBar.location": "top",
   "editor.fontFamily": "JetBrains Mono ",
   "editor.fontWeight": "normal",
@@ -115,5 +113,10 @@
     ]
   },
   "cSpell.userWords": ["gtag"],
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
+  "react-native-tools.showUserTips": false,
+  "mdx.validate.validateFileLinks": "ignore",
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDelete": false
 }
