@@ -32,7 +32,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 plugins=(
     git
      node
-     vscode     
+     vscode
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -54,17 +54,21 @@ export ARCHFLAGS="-arch x86_64"
 ## Opening GitHub directory
 alias g="$HOME/Documents/GitHub/"
 
-# Show touch on iOS simulator
+## Show touch on iOS simulator
 alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
 
-# Hide touch on iOS simulator
+## Hide touch on iOS simulator
 alias hidetouch="defaults write com.apple.iphonesimulator ShowSingleTouches 0"
 
-# Show/Hide hidden files in Finder
+## Show/Hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 
+## Resize icons in launchpad
+alias lcol="defaults write com.apple.dock springboard-columns -int 9"
+alias lrow="defaults write com.apple.dock springboard-rows -int 8"
+alias kdock="killall Dock"
 
 ## git shorthands
 alias gall="git add ."
@@ -79,7 +83,6 @@ alias gb="git branch"
 
 ## yarn
 alias yarn="y"
-
 
 ## alias for opening expo/docs directory directly
 
