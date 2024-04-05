@@ -31,12 +31,12 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-     node
-     vscode
-    )
+    node
+    vscode
+)
 
 source $ZSH/oh-my-zsh.sh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # Custom scripts
@@ -85,7 +85,6 @@ alias gb="git branch"
 alias y="yarn"
 
 ## alias for opening expo/docs directory directly
-
 alias ed="$HOME/Documents/GitHub/expo/docs"
 
 ################ END OF FILE configs ################
