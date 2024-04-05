@@ -82,7 +82,7 @@ alias gck="git checkout"
 alias gb="git branch"
 
 ## yarn
-alias yarn="y"
+alias y="yarn"
 
 ## alias for opening expo/docs directory directly
 
