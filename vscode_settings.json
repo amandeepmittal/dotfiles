@@ -1,4 +1,5 @@
 {
+  "security.workspace.trust.untrustedFiles": "open",
   "editor.tabSize": 2,
   "workbench.editor.tabSizing": "shrink",
   "editor.cursorBlinking": "phase",
