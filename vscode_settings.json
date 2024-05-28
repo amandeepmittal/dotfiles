@@ -20,10 +20,9 @@
   "cSpell.enableFiletypes": ["markdown", "mdx"],
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
-  "editor.fontSize": 12.5,
+  "editor.fontSize": 12.25,
   "workbench.iconTheme": "catppuccin-latte",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "workbench.colorTheme": "Catppuccin Latte",
   "workbench.activityBar.location": "top",
   "editor.fontFamily": "JetBrains Mono ",
   "editor.fontWeight": "normal",
@@ -83,41 +82,41 @@
   "files.associations": {
     ".env*": "dotenv"
   },
-  "editor.tokenColorCustomizations": {
-    "[*Light*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#000"
-          }
-        }
-      ]
-    },
-    "[*Dark*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#fff"
-          }
-        }
-      ]
-    },
-    "textMateRules": [
-      {
-        "scope": "keyword.other.dotenv",
-        "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
-  },
   "cSpell.userWords": ["gtag"],
+  "workbench.colorCustomizations": {
+    // Expo Light customizations
+    "sideBar.background": "#e6e9ef",
+    "sideBar.dropBackground": "#8839ef33",
+    "sideBar.foreground": "#4c4f69",
+    "sideBar.border": "#00000000",
+    "sideBarSectionHeader.background": "#e6e9ef",
+    "sideBarSectionHeader.foreground": "#4c4f69"
+    // ---
+    // Only for batsignal theme
+    // "editorInfo.foreground": "#31E1F7",
+    // "editorWarning.foreground": "#FC4100",
+    // ---
+  },
+  // Only for batsignal theme
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "scope": "entity.name.function",
+  //       "settings": {
+  //         "foreground": "#068FFF",
+  //       },
+  //     }
+  //   ]
+  // },
+  // ---
+  // ---
   "editor.accessibilitySupport": "off",
   "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
   "react-native-tools.showUserTips": false,
   "mdx.validate.validateFileLinks": "ignore",
   "workbench.editor.enablePreview": false,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Expo Light",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false
 }
