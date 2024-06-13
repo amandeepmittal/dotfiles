@@ -8,3 +8,4 @@ This repo contains my dot file(s).
 - `.gitignore`
 - `vscode_settings.json` (VS Code)
 - `brew-bundle.txt`
+- `starship.toml`
