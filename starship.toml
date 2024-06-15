@@ -11,7 +11,7 @@ $directory\
 [](fg:peach bg:green)\
 $git_branch\
 $git_status\
-[](fg:green bg:teal)\
+[](fg:green bg:lavender)\
 $c\
 $rust\
 $golang\
@@ -21,11 +21,8 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:teal bg:blue)\
-$docker_context\
-[](fg:blue bg:purple)\
 $time\
-[ ](fg:purple)\
+[ ](fg:lavender)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -57,6 +54,7 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+white = "#ffffff"
 
 [os]
 disabled = false
@@ -90,7 +88,7 @@ style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:white bg:peach"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -114,7 +112,7 @@ format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 [nodejs]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:base bg:lavender)]($style)'
 
 [c]
 symbol = " "
