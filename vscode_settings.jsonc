@@ -17,7 +17,10 @@
   "readTime.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.language": "en,en-US",
-  "cSpell.enableFiletypes": ["markdown", "mdx"],
+  "cSpell.enableFiletypes": [
+    "markdown",
+    "mdx"
+  ],
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.fontSize": 12.25,
@@ -30,9 +33,20 @@
   "[markdown]": {
     "editor.quickSuggestions": {
       "comments": "on",
-      "strings": "on",
-      "other": "on"
-    }
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggestOnTriggerCharacters": false
+  },
+  "[mdx]": {
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggestOnTriggerCharacters": false
   },
   // JSON
   "[json]": {
@@ -62,13 +76,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "grammarly.files.include": [
-    "**/README.md",
-    "**/readme.md",
-    "**/*.txt",
-    "**/*.md",
-    "**/*.mdx"
-  ],
   // ----------------------------------
   // ESLINT
   "eslint.validate": [
@@ -82,15 +89,19 @@
   "files.associations": {
     ".env*": "dotenv"
   },
-  "cSpell.userWords": ["gtag"],
+  "cSpell.userWords": [
+    "gtag",
+    "Moti",
+    "Redbox"
+  ],
   "workbench.colorCustomizations": {
     // Expo Light customizations
-    "sideBar.background": "#e6e9ef",
-    "sideBar.dropBackground": "#8839ef33",
-    "sideBar.foreground": "#4c4f69",
-    "sideBar.border": "#00000000",
-    "sideBarSectionHeader.background": "#e6e9ef",
-    "sideBarSectionHeader.foreground": "#4c4f69"
+    // "sideBar.background": "#e6e9ef",
+    // "sideBar.dropBackground": "#8839ef33",
+    // "sideBar.foreground": "#4c4f69",
+    // "sideBar.border": "#00000000",
+    // "sideBarSectionHeader.background": "#e6e9ef",
+    // "sideBarSectionHeader.foreground": "#4c4f69"
     // ---
     // Only for batsignal theme
     // "editorInfo.foreground": "#31E1F7",
@@ -109,14 +120,35 @@
   //   ]
   // },
   // ---
-  // ---
   "editor.accessibilitySupport": "off",
   "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
   "react-native-tools.showUserTips": false,
   "mdx.validate.validateFileLinks": "ignore",
   "workbench.editor.enablePreview": false,
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Expo Light",
+  "workbench.colorTheme": "Flexoki Light Purple",
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cSpell.diagnosticLevel": "Hint",
+  "supermaven.allowGitignore": true,
+  "supermaven.enable": {
+    "*": true
+  },
+  "highlight-matching-tag.styles": {
+    "inner": {
+      "underline": "#FF8F00"
+    }
+  },
+  "workbench.startupEditor": "none",
+  "editor.cursorWidth": 3,
+  "apc.stylesheet": {
+    // ".editor .title": "background: transparent !important;",
+    ".monaco-editor .cursor": "background: linear-gradient(to bottom, #FF8F00 0%, #FF204E 100%);",
+    // Only show scrollbar when hovered
+    ".editor .scrollbar .slider": "visibility: hidden",
+    ".editor .scrollbar:hover .slider": "visibility: initial"
+  },
+  "terminal.integrated.env.osx": {},
+  "console-ninja.featureSet": "Community",
+  "githubPullRequests.pullBranch": "never",
 }
