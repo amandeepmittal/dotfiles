@@ -25,9 +25,9 @@
   "editor.minimap.enabled": false,
   "editor.fontSize": 12.25,
   "workbench.iconTheme": "catppuccin-latte",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "workbench.activityBar.location": "top",
-  "editor.fontFamily": "JetBrains Mono ",
+  "editor.fontFamily": "Overpass Mono",
   "editor.fontWeight": "normal",
   // Markdown
   "[markdown]": {
@@ -126,7 +126,6 @@
   "mdx.validate.validateFileLinks": "ignore",
   "workbench.editor.enablePreview": false,
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Flexoki Light Purple",
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "cSpell.diagnosticLevel": "Hint",
