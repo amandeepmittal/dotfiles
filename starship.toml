@@ -3,9 +3,6 @@
 # source for theme and configuration: https://github.com/typecraft-dev/dotfiles/blob/master/starship.toml
 
 format = """
-[](surface0)\
-$os\
-$username\
 [](bg:peach fg:surface0)\
 $directory\
 [](fg:peach bg:green)\
@@ -57,7 +54,7 @@ crust = "#11111b"
 white = "#ffffff"
 
 [os]
-disabled = false
+disabled = true
 style = "bg:surface0 fg:text"
 
 [os.symbols]
