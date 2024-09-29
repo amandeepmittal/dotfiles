@@ -23,7 +23,7 @@
   ],
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
-  "editor.fontSize": 12.25,
+  "editor.fontSize": 13,
   "workbench.iconTheme": "catppuccin-latte",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "workbench.activityBar.location": "top",
@@ -37,7 +37,8 @@
       "other": "off"
     },
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.suggestOnTriggerCharacters": false
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.fontFamily": "iA Writer Quattro S",
   },
   "[mdx]": {
     "editor.quickSuggestions": {
@@ -102,24 +103,7 @@
     // "sideBar.border": "#00000000",
     // "sideBarSectionHeader.background": "#e6e9ef",
     // "sideBarSectionHeader.foreground": "#4c4f69"
-    // ---
-    // Only for batsignal theme
-    // "editorInfo.foreground": "#31E1F7",
-    // "editorWarning.foreground": "#FC4100",
-    // ---
   },
-  // Only for batsignal theme
-  // "editor.tokenColorCustomizations": {
-  //   "textMateRules": [
-  //     {
-  //       "scope": "entity.name.function",
-  //       "settings": {
-  //         "foreground": "#068FFF",
-  //       },
-  //     }
-  //   ]
-  // },
-  // ---
   "editor.accessibilitySupport": "off",
   "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
   "react-native-tools.showUserTips": false,
@@ -128,7 +112,7 @@
   "explorer.confirmDelete": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "cSpell.diagnosticLevel": "Hint",
+  // "cSpell.diagnosticLevel": "Hint",
   "supermaven.allowGitignore": true,
   "supermaven.enable": {
     "*": true
@@ -148,6 +132,38 @@
     ".editor .scrollbar:hover .slider": "visibility: initial"
   },
   "terminal.integrated.env.osx": {},
-  "console-ninja.featureSet": "Community",
   "githubPullRequests.pullBranch": "never",
+  "workbench.colorTheme": "Night Owl Light",
+  "editor.tokenColorCustomizations": {
+    "[Night Owl Light]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "punctuation.definition.heading.mdx",
+            "markup.heading.atx.2.mdx"
+          ],
+          "settings": {
+            "foreground": "#C96765"
+          }
+        },
+        {
+          "scope": [
+            "string.other.begin.mdx",
+            "string.other.begin.link.mdx",
+            "string.other.end.mdx"
+          ],
+          "settings": {
+            "foreground": "#0C969B"
+          }
+        },
+        {
+          "scope": "string.other.link.destination.mdx",
+          "settings": {
+            "foreground": "#0C969B",
+            "fontStyle": "italic underline"
+          }
+        },
+      ]
+    },
+  }
 }
