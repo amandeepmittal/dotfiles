@@ -18,6 +18,7 @@ brew 'watchman'
 brew 'vale'
 brew 'cocoapods'
 brew 'typos-cli'
+brew 'starship'
 
 # Images, Video
 brew 'ffmpeg'
