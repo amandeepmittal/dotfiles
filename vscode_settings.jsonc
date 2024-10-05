@@ -23,11 +23,11 @@
   ],
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.5,
   "workbench.iconTheme": "catppuccin-latte",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "workbench.activityBar.location": "top",
-  "editor.fontFamily": "Overpass Mono",
+  "editor.fontFamily": "JetBrains Mono NL",
   "editor.fontWeight": "normal",
   // Markdown
   "[markdown]": {
@@ -38,7 +38,6 @@
     },
     "editor.acceptSuggestionOnEnter": "off",
     "editor.suggestOnTriggerCharacters": false,
-    "editor.fontFamily": "iA Writer Quattro S",
   },
   "[mdx]": {
     "editor.quickSuggestions": {
@@ -86,7 +85,7 @@
     "typescriptreact"
   ],
   // CODE::STATS EXTENSION
-  "codestats.apikey": "SFMyNTY.WVcxaGJtMXBkSFJoYkE9PSMjTkRZPQ.PH2klCfr2hQisuH3R9j2eG-IsA1Usb7EqrPstWkovOA",
+  "codestats.apikey": "",
   "files.associations": {
     ".env*": "dotenv"
   },
@@ -133,37 +132,4 @@
   },
   "terminal.integrated.env.osx": {},
   "githubPullRequests.pullBranch": "never",
-  "workbench.colorTheme": "Night Owl Light",
-  "editor.tokenColorCustomizations": {
-    "[Night Owl Light]": {
-      "textMateRules": [
-        {
-          "scope": [
-            "punctuation.definition.heading.mdx",
-            "markup.heading.atx.2.mdx"
-          ],
-          "settings": {
-            "foreground": "#C96765"
-          }
-        },
-        {
-          "scope": [
-            "string.other.begin.mdx",
-            "string.other.begin.link.mdx",
-            "string.other.end.mdx"
-          ],
-          "settings": {
-            "foreground": "#0C969B"
-          }
-        },
-        {
-          "scope": "string.other.link.destination.mdx",
-          "settings": {
-            "foreground": "#0C969B",
-            "fontStyle": "italic underline"
-          }
-        },
-      ]
-    },
-  }
 }
