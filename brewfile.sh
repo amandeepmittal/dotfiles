@@ -1,10 +1,13 @@
 # Specify directory to install
 cask_args appdir: "/Applications"
 
-# Install packages
+# Tap Homebrew
 tap 'homebrew/bundle'
+tap "homebrew/core"
+
+# Install packages
+brew 'mas'
 brew 'direnv'
-brew 'ffmpeg'
 brew 'git'
 brew 'git-crypt'
 brew 'git-lfs'
@@ -15,8 +18,9 @@ brew 'watchman'
 brew 'vale'
 brew 'cocoapods'
 brew 'typos-cli'
-brew "zsh-syntax-highlighting"
 
+# Images, Video
+brew 'ffmpeg'
 
 # Fonts
 cask 'font-jetbrains-mono'
@@ -31,3 +35,10 @@ cask 'brave-browser'
 cask 'arc'
 cask 'imageoptim'
 cask 'expo-orbit'
+
+## App Store apps
+mas "1Password 7", id: 1333542190
+mas "Telegram", id: 747648890
+mas "Slack", id: 803453959
+mas 'HiddenMe', id: 467040476
+mas 'Bandwidth+', id: 490461369
