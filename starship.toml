@@ -1,28 +1,23 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# source for theme and configuration: https://github.com/typecraft-dev/dotfiles/blob/master/starship.toml
+add_newline = true
+format = """$directory$character"""
+palette = "catppuccin_mocha"
+right_format = """$all"""
 
-format = """
-[](bg:peach fg:surface0)\
-$directory\
-[](fg:peach bg:green)\
-$git_branch\
-$git_status\
-[](fg:green bg:lavender)\
-$c\
-$rust\
-$golang\
-$nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
-$python\
-$time\
-[ ](fg:lavender)\
-$line_break$character"""
+[character]
+success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
+error_symbol = '[✖](bold fg:red)'
 
-palette = 'catppuccin_mocha'
+[directory]
+style = 'bold fg:text bg:base'
+format = '[](bold base)[$path ]($style)[$read_only]($read_only_style)'
+read_only_style = 'bold fg:red bg:mantle'
+
+[git_branch]
+format='[](bold base)[$symbol$branch(:$remote_branch)](bold bg:base fg:text)[](bold base)'
+style='bold bright fg:white bg:base'
+symbol=" "
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -52,128 +47,3 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 white = "#ffffff"
-
-[os]
-disabled = true
-style = "bg:surface0 fg:text"
-
-[os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = ""
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰣇"
-Artix = "󰣇"
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-
-[username]
-# show_always = true
-style_user = "bg:surface0 fg:text"
-style_root = "bg:surface0 fg:text"
-format = '[ $user ]($style)'
-
-[directory]
-style = "fg:white bg:peach"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "…/"
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
-
-[git_branch]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
-
-[git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:lavender)]($style)'
-
-[c]
-symbol = " "
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[php]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[java]
-symbol = " "
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[haskell]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[python]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[docker_context]
-symbol = ""
-style = "bg:mantle"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
-
-[cmd_duration]
-min_time = 1000  # Show command duration over 1000 milliseconds (=1 sec)
-format = " took [$duration]($style)"
-
-[time]
-disabled = true
-time_format = "%R"
-style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
-
-[line_break]
-disabled = false
-
-[character]
-disabled = false
-success_symbol = '[](bold fg:green)'
-error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
-vimcmd_replace_one_symbol = '[](bold fg:purple)'
-vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:lavender)'
