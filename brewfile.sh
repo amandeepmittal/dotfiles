@@ -3,8 +3,6 @@ cask_args appdir: "/Applications"
 
 # Install packages
 tap 'homebrew/bundle'
-tap 'homebrew/cask-fonts'
-brew 'bun'
 brew 'direnv'
 brew 'ffmpeg'
 brew 'git-crypt'
