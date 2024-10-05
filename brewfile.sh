@@ -38,7 +38,7 @@ cask 'imageoptim'
 cask 'expo-orbit'
 
 ## App Store apps
-mas "1Password 7", id: 1333542190
+mas "1Password 7 - Password Manager", id: 1333542190
 mas "Telegram", id: 747648890
 mas "Slack", id: 803453959
 mas 'HiddenMe', id: 467040476
