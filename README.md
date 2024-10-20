@@ -6,6 +6,7 @@ This repo contains my dot file(s).
 
 - `.zshrc`
 - `.gitignore`
-- `vscode_settings.json` (VS Code)
-- `brew-bundle.txt`
+- `brewfile.sh`
+- `iterm-default.json`
 - `starship.toml`
+- `vscode_settings.json` (VS Code)
