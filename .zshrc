@@ -86,8 +86,12 @@ alias y="yarn"
 
 ## alias for opening expo/docs directory directly
 alias ed="$HOME/Documents/GitHub/expo/docs"
+alias ex="$HOME/Documents/GitHub/expo"
 
+# direnv
 eval "$(direnv hook zsh)"
 
 ################ END OF FILE configs ################
+
+# Starship
 eval "$(starship init zsh)"
