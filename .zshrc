@@ -88,10 +88,13 @@ alias y="yarn"
 alias ed="$HOME/Documents/GitHub/expo/docs"
 alias ex="$HOME/Documents/GitHub/expo"
 
+################ END OF FILE configs ################
+
 # direnv
 eval "$(direnv hook zsh)"
 
-################ END OF FILE configs ################
-
 # Starship
 eval "$(starship init zsh)"
+
+# rbenv
+eval "$(rbenv init -)"
