@@ -17,16 +17,15 @@
   "readTime.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.language": "en,en-US",
-  "cSpell.enableFiletypes": [
-    "markdown",
-    "mdx"
-  ],
+  "cSpell.enabledFileTypes": {
+    "markdown": true,
+    "mdx": true
+  },
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 14,
   "workbench.iconTheme": "catppuccin-latte",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "workbench.activityBar.location": "top",
   "editor.fontFamily": "JetBrains Mono NL",
   "editor.fontWeight": "normal",
   // Markdown
@@ -85,24 +84,15 @@
     "typescriptreact"
   ],
   // CODE::STATS EXTENSION
-  "codestats.apikey": "",
   "files.associations": {
     ".env*": "dotenv"
   },
   "cSpell.userWords": [
     "gtag",
     "Moti",
-    "Redbox"
+    "Redbox",
+    "styleguide"
   ],
-  "workbench.colorCustomizations": {
-    // Expo Light customizations
-    // "sideBar.background": "#e6e9ef",
-    // "sideBar.dropBackground": "#8839ef33",
-    // "sideBar.foreground": "#4c4f69",
-    // "sideBar.border": "#00000000",
-    // "sideBarSectionHeader.background": "#e6e9ef",
-    // "sideBarSectionHeader.foreground": "#4c4f69"
-  },
   "editor.accessibilitySupport": "off",
   "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
   "react-native-tools.showUserTips": false,
@@ -111,11 +101,7 @@
   "explorer.confirmDelete": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  // "cSpell.diagnosticLevel": "Hint",
-  "supermaven.allowGitignore": true,
-  "supermaven.enable": {
-    "*": true
-  },
+  "cSpell.diagnosticLevel": "Hint",
   "highlight-matching-tag.styles": {
     "inner": {
       "underline": "#FF8F00"
@@ -132,4 +118,6 @@
   },
   "terminal.integrated.env.osx": {},
   "githubPullRequests.pullBranch": "never",
+  "update.mode": "manual",
+  "workbench.colorTheme": "Quiet Light",
 }
