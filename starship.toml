@@ -2,7 +2,7 @@
 
 add_newline = true
 format = """$directory$character"""
-palette = "catppuccin_mocha"
+palette = "quiet_light"
 right_format = """$all"""
 
 ################################
@@ -11,50 +11,62 @@ right_format = """$all"""
 ################################
 
 [character]
-success_symbol = '[➜](bold fg:ansi_2 bg:background)[](bold background)'
-error_symbol = '[✖](bold fg:ansi_1)'
+success_symbol = '[➜ ](bold fg:git_green)'
+error_symbol = '[✖](bold fg:git_red)'
 
 [directory]
-style = 'bold fg:cursor bg:background'
-format = '[](bold background)[$path ]($style)[$read_only]($read_only_style)'
-read_only_style = 'bold fg:ansi_1 bg:tab'
+style = 'bold fg:dir_blue'
+format = '[$path ]($style)[$read_only]($read_only_style)'
+read_only_style = 'bold fg:git_red'
 
 [git_branch]
-format='[](bold background)[$symbol$branch(:$remote_branch)](bold bg:background fg:tab)[](bold background)'
-style='bold fg:foreground bg:background'
-symbol=" "
+format = '[$symbol$branch(:$remote_branch) ]($style)'
+style = 'bold fg:dir_blue'
+symbol = " "
+
+[git_status]
+format = '[$all_status$ahead_behind]($style)'
+style = 'bold fg:dir_blue'  # Changed to blue instead of purple
+
 
 [gcloud]
 disabled = true
 
-
 [palettes.quiet_light]
-background = "#F5F5F5"     # Background Color
-foreground = "#333333"     # Foreground Color
-selection = "#C1C3C4"      # Selection Color
-cursor = "#705697"         # Cursor Color
+# Core UI colors
+background = "#F5F5F5"
+foreground = "#333333"
 
-# ANSI Colors
-ansi_0 = "#000000"        # Black
-ansi_1 = "#CD3131"        # Red
-ansi_2 = "#00BC00"        # Green
-ansi_3 = "#949800"        # Yellow
-ansi_4 = "#0451A5"        # Blue
-ansi_5 = "#BC05BC"        # Magenta
-ansi_6 = "#0598BC"        # Cyan
-ansi_7 = "#555555"        # White
-ansi_8 = "#666666"        # Bright Black
-ansi_9 = "#CD3131"        # Bright Red
-ansi_10 = "#14CE14"       # Bright Green
-ansi_11 = "#B5BA00"       # Bright Yellow
-ansi_12 = "#0451A5"       # Bright Blue
-ansi_13 = "#BC05BC"       # Bright Magenta
-ansi_14 = "#0598BC"       # Bright Cyan
-ansi_15 = "#A5A5A5"       # Bright White
+# Git and syntax colors from VS Code Quiet Light
+dir_blue = "#4B69C6"      # Directory and command color
+git_purple = "#7A3E9D"    # Git branch & class names
+git_green = "#448C27"     # Strings & success
+git_red = "#AA3731"       # Functions & errors
+git_gray = "#8190A0"      # Git status messages
+git_text = "#333333"      # Regular text
 
-# UI Colors
-badge = "#E84A1C"         # Badge Color
-tab = "#C4B7D7"           # Tab Color
+# Base terminal colors
+tab = "#C4B7D7"
+cursor = "#705697"
+selection = "#C9D0D9"
+
+# ANSI Colors (keeping these for terminal compatibility)
+ansi_0 = "#000000"
+ansi_1 = "#CD3131"
+ansi_2 = "#448C27"
+ansi_3 = "#949800"
+ansi_4 = "#4B69C6"
+ansi_5 = "#7A3E9D"
+ansi_6 = "#0598BC"
+ansi_7 = "#555555"
+ansi_8 = "#666666"
+ansi_9 = "#CD3131"
+ansi_10 = "#448C27"
+ansi_11 = "#B5BA00"
+ansi_12 = "#4B69C6"
+ansi_13 = "#7A3E9D"
+ansi_14 = "#0598BC"
+ansi_15 = "#A5A5A5"
 
 
 ####################
