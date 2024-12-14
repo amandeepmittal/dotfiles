@@ -24,6 +24,10 @@ format='[](bold background)[$symbol$branch(:$remote_branch)](bold bg:background 
 style='bold fg:foreground bg:background'
 symbol=" "
 
+[gcloud]
+disabled = true
+
+
 [palettes.quiet_light]
 background = "#F5F5F5"     # Background Color
 foreground = "#333333"     # Foreground Color
@@ -72,6 +76,10 @@ tab = "#C4B7D7"           # Tab Color
 # format='[](bold base)[$symbol$branch(:$remote_branch)](bold bg:base fg:text)[](bold base)'
 # style='bold bright fg:white bg:base'
 # symbol=" "
+
+# [gcloud]
+# disabled = true
+
 
 # [palettes.catppuccin_mocha]
 # rosewater = "#f5e0dc"
