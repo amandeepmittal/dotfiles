@@ -5,45 +5,105 @@ format = """$directory$character"""
 palette = "catppuccin_mocha"
 right_format = """$all"""
 
+####################
+# Based on Quiet Light theme
+# Used for light mode
+####################
+
 [character]
-success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
-error_symbol = '[✖](bold fg:red)'
+success_symbol = '[➜](bold fg:ansi_2 bg:background)[](bold background)'
+error_symbol = '[✖](bold fg:ansi_1)'
 
 [directory]
-style = 'bold fg:text bg:base'
-format = '[](bold base)[$path ]($style)[$read_only]($read_only_style)'
-read_only_style = 'bold fg:red bg:mantle'
+style = 'bold fg:cursor bg:background'
+format = '[](bold background)[$path ]($style)[$read_only]($read_only_style)'
+read_only_style = 'bold fg:ansi_1 bg:tab'
 
 [git_branch]
-format='[](bold base)[$symbol$branch(:$remote_branch)](bold bg:base fg:text)[](bold base)'
-style='bold bright fg:white bg:base'
-symbol=" "
+format='[](bold background)[$symbol$branch(:$remote_branch)](bold bg:background fg:tab)[](bold background)'
+style='bold fg:foreground bg:background'
+symbol=" "
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-orange = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
-white = "#ffffff"
+[palettes.quiet_light]
+background = "#F5F5F5"     # Background Color
+foreground = "#333333"     # Foreground Color
+selection = "#C1C3C4"      # Selection Color
+cursor = "#705697"         # Cursor Color
+
+# ANSI Colors
+ansi_0 = "#000000"        # Black
+ansi_1 = "#CD3131"        # Red
+ansi_2 = "#00BC00"        # Green
+ansi_3 = "#949800"        # Yellow
+ansi_4 = "#0451A5"        # Blue
+ansi_5 = "#BC05BC"        # Magenta
+ansi_6 = "#0598BC"        # Cyan
+ansi_7 = "#555555"        # White
+ansi_8 = "#666666"        # Bright Black
+ansi_9 = "#CD3131"        # Bright Red
+ansi_10 = "#14CE14"       # Bright Green
+ansi_11 = "#B5BA00"       # Bright Yellow
+ansi_12 = "#0451A5"       # Bright Blue
+ansi_13 = "#BC05BC"       # Bright Magenta
+ansi_14 = "#0598BC"       # Bright Cyan
+ansi_15 = "#A5A5A5"       # Bright White
+
+# UI Colors
+badge = "#E84A1C"         # Badge Color
+tab = "#C4B7D7"           # Tab Color
+
+
+####################
+# Dracula theme
+# Used for dark mode
+####################
+
+
+# [character]
+# success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
+# error_symbol = '[✖](bold fg:red)'
+
+# [directory]
+# style = 'bold fg:text bg:base'
+# format = '[](bold base)[$path ]($style)[$read_only]($read_only_style)'
+# read_only_style = 'bold fg:red bg:mantle'
+
+# [git_branch]
+# format='[](bold base)[$symbol$branch(:$remote_branch)](bold bg:base fg:text)[](bold base)'
+# style='bold bright fg:white bg:base'
+# symbol=" "
+
+# [palettes.catppuccin_mocha]
+# rosewater = "#f5e0dc"
+# flamingo = "#f2cdcd"
+# pink = "#f5c2e7"
+# orange = "#cba6f7"
+# red = "#f38ba8"
+# maroon = "#eba0ac"
+# peach = "#fab387"
+# yellow = "#f9e2af"
+# green = "#a6e3a1"
+# teal = "#94e2d5"
+# sky = "#89dceb"
+# sapphire = "#74c7ec"
+# blue = "#89b4fa"
+# lavender = "#b4befe"
+# text = "#cdd6f4"
+# subtext1 = "#bac2de"
+# subtext0 = "#a6adc8"
+# overlay2 = "#9399b2"
+# overlay1 = "#7f849c"
+# overlay0 = "#6c7086"
+# surface2 = "#585b70"
+# surface1 = "#45475a"
+# surface0 = "#313244"
+# base = "#1e1e2e"
+# mantle = "#181825"
+# crust = "#11111b"
+# white = "#ffffff"
+
+##########################
+# End of Dracula theme
+##########################
+
+command_timeout="10000"
