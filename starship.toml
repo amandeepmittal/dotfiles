@@ -5,10 +5,10 @@ format = """$directory$character"""
 palette = "catppuccin_mocha"
 right_format = """$all"""
 
-####################
+################################
 # Based on Quiet Light theme
 # Used for light mode
-####################
+################################
 
 [character]
 success_symbol = '[➜](bold fg:ansi_2 bg:background)[](bold background)'
