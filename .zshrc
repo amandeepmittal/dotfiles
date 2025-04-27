@@ -9,9 +9,11 @@ export PATH=/opt/homebrew/bin:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # Android specific paths after installing Android Studio
-export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# For work, make sure to install Android SDK Tools (Obsolete) under Android Studio Settings > Language & Frameworks > Android SDK > SDK Tools
 
 # To stop brew from auto updating
 export HOMEBREW_NO_AUTO_UPDATE=1
