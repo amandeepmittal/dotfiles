@@ -19,7 +19,7 @@
   "cSpell.language": "en,en-US",
   "cSpell.enabledFileTypes": {
     "markdown": true,
-    "mdx": true,
+    "mdx": true
   },
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": true,
