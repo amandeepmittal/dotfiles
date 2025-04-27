@@ -1,6 +1,6 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
   "editor.tabSize": 2,
+  "workbench.colorTheme": "Licht Theme",
   "workbench.editor.tabSizing": "shrink",
   "editor.cursorBlinking": "phase",
   "editor.fontLigatures": false,
@@ -19,33 +19,22 @@
   "cSpell.language": "en,en-US",
   "cSpell.enabledFileTypes": {
     "markdown": true,
-    "mdx": true
+    "mdx": true,
   },
   "editor.inlineSuggest.enabled": true,
-  "editor.minimap.enabled": false,
-  "editor.fontSize": 14,
+  "editor.minimap.enabled": true,
+  "editor.fontSize": 13,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "workbench.iconTheme": "catppuccin-latte",
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "editor.fontFamily": "JetBrains Mono NL",
+  "editor.fontFamily": "JetBrains Mono ",
   "editor.fontWeight": "normal",
   // Markdown
   "[markdown]": {
     "editor.quickSuggestions": {
       "comments": "on",
-      "strings": "off",
-      "other": "off"
-    },
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.suggestOnTriggerCharacters": false,
-  },
-  "[mdx]": {
-    "editor.quickSuggestions": {
-      "comments": "on",
-      "strings": "off",
-      "other": "off"
-    },
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.suggestOnTriggerCharacters": false
+      "strings": "on",
+      "other": "on"
+    }
   },
   // JSON
   "[json]": {
@@ -84,40 +73,25 @@
     "typescriptreact"
   ],
   // CODE::STATS EXTENSION
+  "codestats.apikey": "your-api-key",
   "files.associations": {
     ".env*": "dotenv"
   },
-  "cSpell.userWords": [
-    "gtag",
-    "Moti",
-    "Redbox",
-    "styleguide"
-  ],
-  "editor.accessibilitySupport": "off",
   "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
-  "react-native-tools.showUserTips": false,
   "mdx.validate.validateFileLinks": "ignore",
   "workbench.editor.enablePreview": false,
   "explorer.confirmDelete": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "cSpell.diagnosticLevel": "Hint",
-  "highlight-matching-tag.styles": {
-    "inner": {
-      "underline": "#FF8F00"
-    }
-  },
-  "workbench.startupEditor": "none",
-  "editor.cursorWidth": 3,
-  "apc.stylesheet": {
-    // ".editor .title": "background: transparent !important;",
-    ".monaco-editor .cursor": "background: linear-gradient(to bottom, #FF8F00 0%, #FF204E 100%);",
-    // Only show scrollbar when hovered
-    ".editor .scrollbar .slider": "visibility: hidden",
-    ".editor .scrollbar:hover .slider": "visibility: initial"
-  },
-  "terminal.integrated.env.osx": {},
+  "editor.renderLineHighlight": "line",
   "githubPullRequests.pullBranch": "never",
+  "editor.linkedEditing": true,
+  "workbench.startupEditor": "none",
   "update.mode": "manual",
-  "workbench.colorTheme": "Quiet Light",
+  "telemetry.telemetryLevel": "crash",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "redhat.telemetry.enabled": false
 }
