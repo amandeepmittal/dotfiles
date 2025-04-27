@@ -43,3 +43,4 @@ mas "Telegram", id: 747648890
 mas "Slack", id: 803453959
 mas 'HiddenMe', id: 467040476
 mas 'Bandwidth+', id: 490461369
+mas 'Obsidian', id: 1410676096
