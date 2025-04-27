@@ -36,6 +36,7 @@ cask 'brave-browser'
 cask 'arc'
 cask 'imageoptim'
 cask 'expo-orbit'
+cask "cleanshot"
 
 ## App Store apps
 mas "1Password 7 - Password Manager", id: 1333542190
