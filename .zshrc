@@ -92,6 +92,9 @@ alias ex="$HOME/Documents/GitHub/expo"
 
 ################ END OF FILE configs ################
 
+# conda
+eval "$(/Users/amanhimself/miniforge3/bin/conda shell.zsh hook)"
+
 # direnv
 eval "$(direnv hook zsh)"
 
