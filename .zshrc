@@ -13,8 +13,6 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# For work, make sure to install Android SDK Tools (Obsolete) under Android Studio Settings > Language & Frameworks > Android SDK > SDK Tools
-
 # To stop brew from auto updating
 export HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -68,8 +66,8 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias killds="find . -type f -name '*.DS_Store' -ls -delete"
 
 ## Resize icons in launchpad
-alias lcol="defaults write com.apple.dock springboard-columns -int 9"
-alias lrow="defaults write com.apple.dock springboard-rows -int 8"
+alias lcol="defaults write com.apple.dock springboard-columns -int 12"
+alias lrow="defaults write com.apple.dock springboard-rows -int 10"
 alias kdock="killall Dock"
 
 ## git shorthands
@@ -82,6 +80,7 @@ alias glog="git log --oneline --graph --decorate --color"
 alias gap="git add -p"
 alias gck="git checkout"
 alias gb="git branch"
+alias gslog="git shortlog -s"
 
 ## yarn
 alias y="yarn"
@@ -89,6 +88,10 @@ alias y="yarn"
 ## alias for opening expo/docs directory directly
 alias ed="$HOME/Documents/GitHub/expo/docs"
 alias ex="$HOME/Documents/GitHub/expo"
+
+# For Expo CLI
+
+alias nexpo="/Users/amanhimself/Documents/GitHub/expo/packages/@expo/cli/build/bin/cli"
 
 ################ END OF FILE configs ################
 
