@@ -4,38 +4,33 @@ add_newline = true
 format = """
 $directory$git_branch$git_status$cmd_duration
 $character"""
-palette = "nord"  # Toggle with `theme` command: licht or nord
 right_format = """$package$nodejs$python$rust$golang$docker_context"""
-
-################################
-# Licht Light theme
-# Used for light mode
-################################
+command_timeout = 10000
 
 [character]
-success_symbol = '[❯](bold fg:git_green)'
-error_symbol = '[❯](bold fg:git_red)'
-vimcmd_symbol = '[❮](bold fg:git_purple)'
+success_symbol = '[❯](bold #A3BE8C)'
+error_symbol = '[❯](bold #BF616A)'
+vimcmd_symbol = '[❮](bold #B48EAD)'
 
 [cmd_duration]
 min_time = 2_000
 format = '[ $duration]($style) '
-style = 'bold fg:git_gray'
+style = 'bold #D8DEE9'
 
 [directory]
-style = 'bold fg:dir_blue'
+style = 'bold #88C0D0'
 format = '[ $path ]($style)[$read_only]($read_only_style)'
-read_only_style = 'bold fg:git_red'
+read_only_style = 'bold #BF616A'
 read_only = ' '
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch) ]($style)'
-style = 'bold fg:dir_blue'
+style = 'bold #88C0D0'
 symbol = " "
 
 [git_status]
 format = '[$all_status$ahead_behind]($style) '
-style = 'bold fg:dir_blue'
+style = 'bold #88C0D0'
 conflicted = ' '
 ahead = '⇡${count} '
 behind = '⇣${count} '
@@ -47,112 +42,35 @@ staged = ' '
 renamed = '󰑕 '
 deleted = ' '
 
-
 [gcloud]
 disabled = true
 
 [nodejs]
 format = '[$symbol($version)]($style) '
 symbol = ' '
-style = 'fg:git_green'
+style = '#A3BE8C'
 
 [python]
 format = '[$symbol$version]($style) '
 symbol = ' '
-style = 'fg:git_purple'
+style = '#B48EAD'
 
 [rust]
 format = '[$symbol($version)]($style) '
 symbol = ' '
-style = 'fg:git_red'
+style = '#BF616A'
 
 [golang]
 format = '[$symbol($version)]($style) '
 symbol = ' '
-style = 'fg:dir_blue'
+style = '#88C0D0'
 
 [docker_context]
 format = '[$symbol$context]($style) '
 symbol = ' '
-style = 'fg:dir_blue'
+style = '#88C0D0'
 
 [package]
 format = '[$symbol$version]($style) '
 symbol = '󰏗 '
-style = 'fg:git_gray'
-
-[palettes.licht]
-# Licht Light theme - synced with THEME_LIGHT in ~/.zshrc
-background = "#ffffff"
-foreground = "#000000"
-cursor = "#000000"
-
-# Prompt colors
-dir_blue = "#4B69C6"
-git_purple = "#7A3E9D"
-git_green = "#448C27"
-git_red = "#AA3731"
-git_gray = "#8190A0"
-
-# ANSI colors (for reference - applied via zshrc theme function)
-ansi_0 = "#111111"
-ansi_1 = "#dd3c2f"
-ansi_2 = "#00a33f"
-ansi_3 = "#c5be0e"
-ansi_4 = "#3b68fc"
-ansi_5 = "#bb28c7"
-ansi_6 = "#5ebec5"
-ansi_7 = "#919191"
-ansi_8 = "#686868"
-ansi_9 = "#eb5543"
-ansi_10 = "#58c05b"
-ansi_11 = "#c5be0e"
-ansi_12 = "#4668f6"
-ansi_13 = "#dd46f7"
-ansi_14 = "#86bac2"
-ansi_15 = "#b9b9b9"
-
-
-####################
-# Nord theme
-# Used for dark mode
-####################
-
-[palettes.nord]
-# Nord theme colors - maps to same variable names as quiet_light
-dir_blue = "#88C0D0"      # Nord8 - cyan
-git_purple = "#B48EAD"    # Nord15 - purple
-git_green = "#A3BE8C"     # Nord14 - green
-git_red = "#BF616A"       # Nord11 - red
-git_gray = "#D8DEE9"      # Nord4 - light gray (visible on dark bg)
-git_text = "#ECEFF4"      # Nord6 - white
-
-# Base colors
-background = "#2E3440"    # Nord0
-foreground = "#ECEFF4"    # Nord6
-cursor = "#D8DEE9"        # Nord4
-selection = "#434C5E"     # Nord2
-
-####################
-# Old Dracula theme (archived)
-####################
-
-
-# [character]
-# success_symbol = '[➜](bold fg:green bg:base)[](bold base)'
-# error_symbol = '[✖](bold fg:red)'
-
-# [directory]
-# style = 'bold fg:text bg:base'
-# format = '[](bold base)[$path ]($style)[$read_only]($read_only_style)'
-# read_only_style = 'bold fg:red bg:mantle'
-
-# [git_branch]
-# format='[](bold base)[$symbol$branch(:$remote_branch)](bold bg:base fg:text)[](bold base)'
-# style='bold bright fg:white bg:base'
-# symbol=" "
-
-# [gcloud]
-# disabled = true
-
-command_timeout="10000"
+style = '#D8DEE9'
