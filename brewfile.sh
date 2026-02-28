@@ -14,10 +14,8 @@ brew 'git-lfs'
 brew 'readline'
 brew 'scrcpy'
 brew 'yarn'
-brew 'watchman'
 brew 'vale'
 brew 'cocoapods'
-brew 'typos-cli'
 brew 'starship'
 
 # Images, Video
@@ -28,14 +26,11 @@ cask 'font-jetbrains-mono'
 cask 'font-hack-nerd-font'
 
 # Other apps
-cask 'insomnia'
 cask 'visual-studio-code'
 cask 'google-chrome'
 cask 'google-chrome@canary'
 cask 'brave-browser'
-cask 'arc'
 cask 'imageoptim'
-cask 'expo-orbit'
 cask "cleanshot"
 
 ## App Store apps
