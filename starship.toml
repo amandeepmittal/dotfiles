@@ -1,36 +1,37 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = true
-format = """
-$directory$git_branch$git_status$cmd_duration
+format = """$directory$fill$git_branch$git_status$cmd_duration$package$nodejs$python$rust$golang$docker_context
 $character"""
-right_format = """$package$nodejs$python$rust$golang$docker_context"""
 command_timeout = 10000
 
+[fill]
+symbol = ' '
+
 [character]
-success_symbol = '[❯](bold #A3BE8C)'
-error_symbol = '[❯](bold #BF616A)'
-vimcmd_symbol = '[❮](bold #B48EAD)'
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+vimcmd_symbol = '[❮](bold purple)'
 
 [cmd_duration]
 min_time = 2_000
-format = '[ $duration]($style) '
-style = 'bold #D8DEE9'
+format = '[ $duration]($style)'
+style = 'bold purple'
 
 [directory]
-style = 'bold #88C0D0'
-format = '[ $path ]($style)[$read_only]($read_only_style)'
-read_only_style = 'bold #BF616A'
+style = 'bold blue'
+format = '[ $path]($style)[$read_only]($read_only_style)'
+read_only_style = 'bold red'
 read_only = ' '
 
 [git_branch]
-format = '[$symbol$branch(:$remote_branch) ]($style)'
-style = 'bold #88C0D0'
-symbol = " "
+format = '[$symbol$branch(:$remote_branch)]($style) '
+style = 'bold cyan'
+symbol = "\ue0a0 "
 
 [git_status]
-format = '[$all_status$ahead_behind]($style) '
-style = 'bold #88C0D0'
+format = '[$all_status$ahead_behind]($style)'
+style = 'bold cyan'
 conflicted = ' '
 ahead = '⇡${count} '
 behind = '⇣${count} '
@@ -46,31 +47,31 @@ deleted = ' '
 disabled = true
 
 [nodejs]
-format = '[$symbol($version)]($style) '
+format = '[ $symbol($version)]($style)'
 symbol = ' '
-style = '#A3BE8C'
+style = 'green'
 
 [python]
-format = '[$symbol$version]($style) '
+format = '[ $symbol$version]($style)'
 symbol = ' '
-style = '#B48EAD'
+style = 'purple'
 
 [rust]
-format = '[$symbol($version)]($style) '
+format = '[ $symbol($version)]($style)'
 symbol = ' '
-style = '#BF616A'
+style = 'red'
 
 [golang]
-format = '[$symbol($version)]($style) '
+format = '[ $symbol($version)]($style)'
 symbol = ' '
-style = '#88C0D0'
+style = 'cyan'
 
 [docker_context]
-format = '[$symbol$context]($style) '
+format = '[ $symbol$context]($style)'
 symbol = ' '
-style = '#88C0D0'
+style = 'blue'
 
 [package]
-format = '[$symbol$version]($style) '
+format = '[ $symbol$version]($style)'
 symbol = '󰏗 '
-style = '#D8DEE9'
+style = 'blue'
