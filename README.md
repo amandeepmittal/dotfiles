@@ -4,9 +4,9 @@
 
 This repo contains my dot file(s).
 
-- `.zshrc`
-- `.gitignore`
 - `brewfile.sh`
-- `iterm-default.json`
-- `starship.toml`
-- `vscode_settings.json` (VS Code)
+- `ghostty-config` (Ghostty terminal)
+- `iterm-default.json` (iTerm2)
+- `starship.toml` (Starship prompt)
+- `vscode_settings.jsonc` (VS Code)
+- `vscode-extensions.vsix` (VS Code extensions)
