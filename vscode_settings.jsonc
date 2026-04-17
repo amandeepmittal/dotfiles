@@ -1,6 +1,5 @@
 {
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Licht Theme",
   "workbench.editor.tabSizing": "shrink",
   "editor.cursorBlinking": "phase",
   "editor.fontLigatures": false,
@@ -15,6 +14,12 @@
   "editor.bracketPairColorization.enabled": true,
   "files.trimTrailingWhitespace": true,
   "readTime.enabled": true,
+  "readTime.fileTypes": [
+    "markdown",
+    "plaintext",
+    "yaml",
+    "mdx"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.language": "en,en-US",
   "cSpell.enabledFileTypes": {
@@ -23,10 +28,9 @@
   },
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 13.5,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "workbench.iconTheme": "catppuccin-latte",
-  "editor.fontFamily": "JetBrains Mono ",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "normal",
   // Markdown
   "[markdown]": {
@@ -70,14 +74,14 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "markdown"
   ],
   // CODE::STATS EXTENSION
   "codestats.apikey": "your-api-key",
   "files.associations": {
     ".env*": "dotenv"
   },
-  "vale.doNotShowWarningForFileToBeSavedBeforeLinting": true,
   "mdx.validate.validateFileLinks": "ignore",
   "workbench.editor.enablePreview": false,
   "explorer.confirmDelete": false,
@@ -87,11 +91,33 @@
   "workbench.startupEditor": "none",
   "update.mode": "manual",
   "telemetry.telemetryLevel": "crash",
+  "redhat.telemetry.enabled": false,
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning"
+  ],
+  "extensions.ignoreRecommendations": true,
+  "window.commandCenter": true,
+  "explorer.confirmDragAndDrop": false,
+  "claudeCode.preferredLocation": "panel",
+  "editor.codeActionsOnSave": {},
+  "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false
   },
-  "redhat.telemetry.enabled": false
+  "cSpell.userWords": [
+    "oxfmt",
+    "oxlint"
+  ],
+  "workbench.colorTheme": "Light 2026",
+  "workbench.colorCustomizations": {
+    "[Light 2026]": {
+      "editor.selectionBackground": "#ffeb3b66",
+      "editor.selectionHighlightBackground": "#ffeb3b33",
+      "editor.inactiveSelectionBackground": "#ffeb3b33"
+    }
+  }
 }
