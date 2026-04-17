@@ -12,7 +12,9 @@ brew 'git-lfs'
 brew 'mise'
 brew 'readline'
 brew 'scrcpy'
+brew 'bun'
 brew 'starship'
+brew 'tmux'
 
 # Images, Video
 brew 'ffmpeg'
@@ -28,6 +30,7 @@ cask 'google-chrome@canary'
 cask 'brave-browser'
 cask 'imageoptim'
 cask "cleanshot"
+cask 'lm-studio'
 
 ## App Store apps
 mas "1Password 7 - Password Manager", id: 1333542190
