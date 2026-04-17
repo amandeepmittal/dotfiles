@@ -3,19 +3,15 @@ cask_args appdir: "/Applications"
 
 # Tap Homebrew
 tap 'homebrew/bundle'
-tap "homebrew/core"
 
 # Install packages
 brew 'mas'
-brew 'direnv'
 brew 'git'
 brew 'git-crypt'
 brew 'git-lfs'
+brew 'mise'
 brew 'readline'
 brew 'scrcpy'
-brew 'yarn'
-brew 'vale'
-brew 'cocoapods'
 brew 'starship'
 
 # Images, Video
@@ -23,7 +19,7 @@ brew 'ffmpeg'
 
 # Fonts
 cask 'font-jetbrains-mono'
-cask 'font-hack-nerd-font'
+cask 'font-jetbrains-mono-nerd-font'
 
 # Other apps
 cask 'visual-studio-code'
