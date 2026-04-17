@@ -1,9 +1,6 @@
 # Specify directory to install
 cask_args appdir: "/Applications"
 
-# Tap Homebrew
-tap 'homebrew/bundle'
-
 # Install packages
 brew 'mas'
 brew 'git'
