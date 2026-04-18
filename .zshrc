@@ -1,8 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 
 # Required for Expo and React Native local app development
@@ -16,43 +11,15 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # To stop brew from auto updating
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-# ZSH_THEME="robbyrussell"
-
-# Uncomment one of the following lines to change the auto-update behavior
-zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
-
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    node
-    vscode
-)
-
-source $ZSH/oh-my-zsh.sh
-source /Users/amanhimself/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-# Custom scripts
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# aliases
-## alias zshconfig="mate ~/.zshrc"
-## alias ohmyzsh="mate ~/.oh-my-zsh"
-
 ## Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-## Opening GitHub directory
-alias g="$HOME/Documents/GitHub/"
+## Enable AUTO_CD to automatically change to a directory when you `cd` into it
+setopt AUTO_CD
+
+## Opening various directory
+alias g="cd $HOME/github/"
+alias n="cd $HOME/github/notes/"
 
 ## Show touch on iOS simulator
 alias showtouch="defaults write com.apple.iphonesimulator ShowSingleTouches 1"
@@ -82,24 +49,14 @@ alias gck="git checkout"
 alias gb="git branch"
 alias gslog="git shortlog -s"
 
-## yarn
-alias y="yarn"
-
-## alias for opening expo/docs directory directly
-alias ed="$HOME/Documents/GitHub/expo/docs"
-alias ex="$HOME/Documents/GitHub/expo"
-
-# For Expo CLI
-alias nexpo="/Users/amanhimself/Documents/GitHub/expo/packages/@expo/cli/build/bin/cli"
-
-# conda
-eval "$(/Users/amanhimself/miniforge3/bin/conda shell.zsh hook)"
-
-# direnv
-eval "$(direnv hook zsh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Starship
 eval "$(starship init zsh)"
 
-# rbenv
-eval "$(rbenv init -)"
+# mise
+eval "$(mise activate zsh)"
+
+# Enable syntax highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/.local/bin:$PATH"
