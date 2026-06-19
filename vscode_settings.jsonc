@@ -14,12 +14,7 @@
   "editor.bracketPairColorization.enabled": true,
   "files.trimTrailingWhitespace": true,
   "readTime.enabled": true,
-  "readTime.fileTypes": [
-    "markdown",
-    "plaintext",
-    "yaml",
-    "mdx"
-  ],
+  "readTime.fileTypes": ["markdown", "plaintext", "yaml", "mdx"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.language": "en,en-US",
   "cSpell.enabledFileTypes": {
@@ -32,53 +27,37 @@
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontWeight": "normal",
-  // Markdown
   "[markdown]": {
     "editor.quickSuggestions": {
       "comments": "on",
       "strings": "on",
       "other": "on"
-    }
+    },
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // JSON
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // JavaScript
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // JavaScript + React
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // TypeScript
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // TypeScript + React
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // JSON with Comments
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "oxc.oxc-vscode"
   },
-  // HTML
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // ----------------------------------
-  // ESLINT
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "markdown"
-  ],
-  // CODE::STATS EXTENSION
-  "codestats.apikey": "your-api-key",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "markdown"],
+  "codestats.apikey": "",
   "files.associations": {
     ".env*": "dotenv"
   },
@@ -89,18 +68,17 @@
   "githubPullRequests.pullBranch": "never",
   "editor.linkedEditing": true,
   "workbench.startupEditor": "none",
-  "update.mode": "manual",
   "telemetry.telemetryLevel": "crash",
   "redhat.telemetry.enabled": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "error",
-    "warning"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
   "extensions.ignoreRecommendations": true,
   "window.commandCenter": true,
   "explorer.confirmDragAndDrop": false,
   "claudeCode.preferredLocation": "panel",
-  "editor.codeActionsOnSave": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "always"
+  },
+  "chatgpt.composerEnterBehavior": "cmdIfMultiline",
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.enable": {
     "*": true,
@@ -108,16 +86,21 @@
     "markdown": true,
     "scminput": false
   },
-  "cSpell.userWords": [
-    "oxfmt",
-    "oxlint"
-  ],
-  "workbench.colorTheme": "Light 2026",
+  "cSpell.userWords": ["oxfmt", "oxlint"],
+  "workbench.colorTheme": "Min Light",
   "workbench.colorCustomizations": {
     "[Light 2026]": {
       "editor.selectionBackground": "#ffeb3b66",
       "editor.selectionHighlightBackground": "#ffeb3b33",
       "editor.inactiveSelectionBackground": "#ffeb3b33"
-    }
-  }
+    },
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "[mdx]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "extensions.autoUpdate": false,
+  "update.mode": "manual",
+  "git.confirmSync": false
 }
