@@ -24,8 +24,8 @@
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": true,
   "editor.fontSize": 13.5,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "BlexMono Nerd Font Mono",
+  "editor.fontFamily": "BlexMono Nerd Font Mono",
   "editor.fontWeight": "normal",
   "[markdown]": {
     "editor.quickSuggestions": {

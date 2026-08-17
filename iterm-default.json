@@ -325,7 +325,7 @@
   "AWDS Pane Directory" : "",
   "Blur" : true,
   "Vertical Spacing" : 1,
-  "Normal Font" : "JetBrainsMonoNL-Regular 14",
+  "Normal Font" : "BlexMonoNFM 16",
   "Ansi 7 Color" : {
     "Green Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527,
@@ -359,7 +359,7 @@
   },
   "Screen" : -1,
   "AWDS Window Option" : "No",
-  "Non Ascii Font" : "HackNF-Regular 14",
+  "Non Ascii Font" : "BlexMonoNFM 18",
   "Ansi 13 Color" : {
     "Green Component" : 0.47450980392156861,
     "Red Component" : 1,
