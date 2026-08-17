@@ -48,6 +48,7 @@ alias gap="git add -p"
 alias gck="git checkout"
 alias gb="git branch"
 alias gslog="git shortlog -s"
+alias lg="lazygit"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
