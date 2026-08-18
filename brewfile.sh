@@ -19,7 +19,8 @@ brew 'tmux'
 brew 'ffmpeg'
 
 # Fonts
-cask 'font-blex-mono-nerd-font'
+cask 'font-jetbrains-mono'
+cask 'font-jetbrains-mono-nerd-font'
 
 # Other apps
 cask 'visual-studio-code'
