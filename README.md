@@ -9,5 +9,6 @@ This repo contains my dot file(s).
 - `iterm2/themes/` (iTerm2 color schemes, double click the `.itermcolors` file to install)
 - `lazygit-config.yml` (lazygit, copy to `~/Library/Application Support/lazygit/config.yml`)
 - `starship.toml` (Starship prompt)
+- `tmux/` (tmux, copy the five `.conf` files to `~/.config/tmux/`; needs [tpm](https://github.com/tmux-plugins/tpm) and a Nerd Font)
 - `vscode_settings.jsonc` (VS Code)
 - `vscode-extensions.vsix` (VS Code extensions)
