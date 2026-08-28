@@ -19,7 +19,7 @@
   "cSpell.language": "en,en-US",
   "cSpell.enabledFileTypes": {
     "markdown": true,
-    "mdx": true
+    "mdx": true,
   },
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": true,
@@ -31,35 +31,41 @@
     "editor.quickSuggestions": {
       "comments": "on",
       "strings": "on",
-      "other": "on"
+      "other": "on",
     },
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "markdown"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+  ],
   "codestats.apikey": "",
   "files.associations": {
-    ".env*": "dotenv"
+    ".env*": "dotenv",
   },
   "mdx.validate.validateFileLinks": "ignore",
   "workbench.editor.enablePreview": false,
@@ -76,7 +82,7 @@
   "explorer.confirmDragAndDrop": false,
   "claudeCode.preferredLocation": "panel",
   "editor.codeActionsOnSave": {
-    "source.fixAll.oxc": "always"
+    "source.fixAll.oxc": "always",
   },
   "chatgpt.composerEnterBehavior": "cmdIfMultiline",
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -84,7 +90,7 @@
     "*": true,
     "plaintext": false,
     "markdown": true,
-    "scminput": false
+    "scminput": false,
   },
   "cSpell.userWords": ["oxfmt", "oxlint"],
   "workbench.colorTheme": "Min Light",
@@ -92,15 +98,15 @@
     "[Light 2026]": {
       "editor.selectionBackground": "#ffeb3b66",
       "editor.selectionHighlightBackground": "#ffeb3b33",
-      "editor.inactiveSelectionBackground": "#ffeb3b33"
+      "editor.inactiveSelectionBackground": "#ffeb3b33",
     },
   },
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "[mdx]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "extensions.autoUpdate": false,
   "update.mode": "manual",
-  "git.confirmSync": false
+  "git.confirmSync": false,
 }
