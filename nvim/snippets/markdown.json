@@ -1,0 +1,12 @@
+{
+  "Blog frontmatter": {
+    "prefix": "fm",
+    "body": ["---", "title: ${1:Title}", "description: ${2:One-line description.}", "---", "", "$0"],
+    "description": "Blog post frontmatter"
+  },
+  "Vault image embed": {
+    "prefix": "img",
+    "body": ["![[${1:screenshot}.png]]"],
+    "description": "Obsidian-style image embed"
+  }
+}

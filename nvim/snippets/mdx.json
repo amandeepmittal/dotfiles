@@ -1,0 +1,48 @@
+{
+  "Expo Tabs block": {
+    "prefix": "tabs",
+    "body": [
+      "<Tabs>",
+      "",
+      "<Tab label=\"${1:First}\">",
+      "",
+      "${2:content}",
+      "",
+      "</Tab>",
+      "",
+      "<Tab label=\"${3:Second}\">",
+      "",
+      "${0:content}",
+      "",
+      "</Tab>",
+      "",
+      "</Tabs>"
+    ],
+    "description": "Expo docs Tabs/Tab block"
+  },
+  "Expo Step block": {
+    "prefix": "step",
+    "body": ["<Step label=\"${1:1}\">", "", "${0:content}", "", "</Step>"],
+    "description": "Expo docs Step block"
+  },
+  "Expo BoxLink": {
+    "prefix": "boxlink",
+    "body": ["<BoxLink title=\"${1:Title}\" description=\"${2:Description}\" href=\"${3:/path}\" Icon={${4:Icon}} />"],
+    "description": "Expo docs BoxLink card"
+  },
+  "Expo Terminal block": {
+    "prefix": "terminal",
+    "body": ["<Terminal cmd={[\"$ ${1:npx expo start}\"]} />"],
+    "description": "Expo docs Terminal command block"
+  },
+  "Expo Collapsible": {
+    "prefix": "collapsible",
+    "body": ["<Collapsible summary=\"${1:Summary}\">", "", "${0:content}", "", "</Collapsible>"],
+    "description": "Expo docs Collapsible section"
+  },
+  "MDX frontmatter": {
+    "prefix": "fm",
+    "body": ["---", "title: ${1:Title}", "description: ${2:One-line description.}", "---", "", "$0"],
+    "description": "Docs page frontmatter"
+  }
+}
