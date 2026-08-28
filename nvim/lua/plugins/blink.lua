@@ -6,6 +6,7 @@ return {
     -- opts is lazy.nvim shorthand: it calls require("blink.cmp").setup(opts)
     opts = {
       keymap = { preset = "enter" },  -- Enter accepts, Tab/S-Tab move through the list
+      cmdline = { enabled = false },  -- Enter must execute :lua commands, not accept completions
       appearance = { nerd_font_variant = "mono" },
       completion = {
         documentation = { auto_show = true },  -- docs float beside the menu

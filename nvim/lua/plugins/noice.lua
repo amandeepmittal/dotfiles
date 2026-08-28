@@ -8,6 +8,7 @@ return {
 			opts = {
 				timeout = 3000,              -- toasts linger 3s instead of 5
 				render = "wrapped-compact",  -- tidy multi-line messages
+				background_colour = "#0a0c10",  -- needed with a transparent theme; editor-dark from the palette
 			},
 		},
 	},

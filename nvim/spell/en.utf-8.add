@@ -90,3 +90,5 @@ gradle
 AndroidManifest
 SDK
 autocomplete
+agentic
+plugin
