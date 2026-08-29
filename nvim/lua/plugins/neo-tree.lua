@@ -8,8 +8,13 @@ return {
   },
   lazy = false, -- neo-tree will lazily load itself
 
-  config = function()
+    config = function()
     require("neo-tree").setup({
+      window = {
+        mappings = {
+          ["<C-b>"] = "close_window",
+        },
+      },
       filesystem = {
         follow_current_file = {
           enabled = true,          -- tree highlights + reveals whatever buffer is active
@@ -56,4 +61,3 @@ return {
     })
   end,
 }
-
