@@ -6,7 +6,12 @@ return {
   config = function()
     require("github-theme").setup({
       options = {
-        transparent = true,  -- let Ghostty's opacity + blur show through the editor
+        transparent = true, -- disables setting the background color, use Ghostty's settings
+      },
+      groups = {
+        all = {
+          NeoTreeCursorLine = { bg = "sel0", style = "bold" },
+        },
       },
     })
     vim.cmd.colorscheme "github_dark_high_contrast"
