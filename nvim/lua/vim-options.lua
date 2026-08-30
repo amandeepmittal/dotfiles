@@ -1,4 +1,5 @@
 -- Custom vim options for Neovim
+vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.title = true
 vim.opt.titlestring = "%t"
