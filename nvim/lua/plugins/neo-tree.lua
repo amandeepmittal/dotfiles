@@ -10,6 +10,11 @@ return {
 
     config = function()
     require("neo-tree").setup({
+      close_if_last_window = true,
+      source_selector = { winbar = true },
+      default_component_configs = {
+        name = { highlight_opened_files = true },
+      },
       window = {
         mappings = {
           ["<C-b>"] = "close_window",

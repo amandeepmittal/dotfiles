@@ -1,30 +1,27 @@
+-- Custom vim options for Neovim
+vim.opt.number = true
+vim.opt.title = true
+vim.opt.titlestring = "%t"
+vim.opt.keymodel = "startsel,stopsel"
+vim.opt.clipboard = "unnamedplus"
+vim.opt.breakindent = true
+vim.opt.wildignore:append("*/node_modules/*")
+vim.opt.scrolloff = 10
+vim.opt.autoindent = true 
+vim.opt.shiftround = true
+
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
-vim.opt.number = true      -- line numbers in the gutter
-vim.opt.signcolumn = "yes" -- gutter always reserved; no text shift when signs appear
-vim.opt.title = true       -- terminal tab title shows the file being edited
-vim.opt.breakindent = true -- wrapped lines keep their indentation
-vim.opt.wildignore:append("*/node_modules/*")  -- keep :find and completion out of the pit
-vim.opt.scrolloff = 10          -- keep 10 lines of context above/below the cursor
-vim.opt.inccommand = "split"    -- :%s preview panel shows every affected line live
-vim.opt.autoindent = true  -- new lines inherit the current indent
-vim.opt.shiftround = true  -- > and < snap indents to multiples of shiftwidth
--- visual mode: Tab / Shift-Tab indent and keep the selection (tap repeatedly)
-vim.keymap.set("v", "<Tab>", ">gv")
-vim.keymap.set("v", "<S-Tab>", "<gv")
 
-vim.opt.keymodel = "startsel,stopsel"  -- shift+arrows start/stop selection, VS Code style
-vim.opt.clipboard = "unnamedplus"      -- yank/delete/paste talk to the macOS clipboard
-vim.g.mapleader = " "
-
--- Cmd-key copy/cut/paste. These only fire if the terminal passes Cmd through
--- (Ghostty owns cmd+c/v by default; see keybind = super+c=unbind).
 vim.keymap.set("v", "<D-c>", '"+y')
 vim.keymap.set("v", "<D-x>", '"+d')
 vim.keymap.set({ "n", "v" }, "<D-v>", '"+p')
 vim.keymap.set("i", "<D-v>", "<C-r>+")
+-- visual mode: Tab / Shift-Tab indent and keep the selection (tap repeatedly)
+vim.keymap.set("v", "<Tab>", ">gv")
+vim.keymap.set("v", "<S-Tab>", "<gv")
 
 -- floating windows (hover, diagnostics): elevated background + visible border
 vim.api.nvim_create_autocmd("ColorScheme", {
@@ -45,24 +42,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     vim.api.nvim_set_hl(0, "DiagnosticVirtualTextInfo", { fg = "#e89a5c" })
     vim.api.nvim_set_hl(0, "DiagnosticVirtualTextWarn", { fg = "#e0764f" })
     vim.api.nvim_set_hl(0, "DiagnosticVirtualTextError", { fg = "#f85149" })
-  end,
-})
--- add the word under cursor to the dictionary (the one memory all prose tools defer to)
-vim.keymap.set("n", "<leader>a", function()
-  local word = vim.fn.expand("<cword>")
-  vim.cmd("normal! zg")
-  vim.notify("Added '" .. word .. "' to the dictionary", vim.log.levels.INFO)
-end, { desc = "add word to dictionary" })
-
--- one dictionary, versioned with the config; zg / <leader>a append here
-vim.opt.spellfile = vim.fn.stdpath("config") .. "/spell/en.utf-8.add"
-
--- spell checking for prose; the @nospell queries keep it out of code-ish lines
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown", "mdx", "gitcommit" },
-  callback = function()
-    vim.opt_local.spell = true
-    vim.opt_local.spelllang = "en_us"
   end,
 })
 

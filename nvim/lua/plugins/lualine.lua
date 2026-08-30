@@ -57,7 +57,19 @@ return {
 					"diagnostics",
 				},
 				lualine_c = { { "filename", path = 1, symbols = { modified = "●", readonly = "󰌾" } } }, -- dot = unsaved, lock = readonly
-				lualine_x = { "filetype" }, -- drops encoding + fileformat clutter
+				lualine_x = {
+					{
+						function()
+							return require("wakatime").statusline()
+						end,
+						cond = function()
+							return require("wakatime").statusline() ~= ""
+						end,
+						icon = "󰥔",
+						__wakatime_statusline = true,
+					},
+					"filetype", -- drops encoding + fileformat clutter
+				},
 				lualine_y = {
 					wordcount,
 					function()
